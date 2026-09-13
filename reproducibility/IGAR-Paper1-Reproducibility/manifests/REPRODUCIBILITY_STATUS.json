@@ -1,0 +1,215 @@
+{
+  "status": "CLOSED",
+  "closed_at": "2026-09-11T16:13:14.020474+00:00",
+  "gaps": {
+    "exact_cell_60A_60E_source": {
+      "closed": true,
+      "detail": {
+        "CELL 60A": {
+          "notebook": "/content/drive/MyDrive/Colab Notebooks/Paper1_Phase1_RUN.ipynb",
+          "cell_index": 63
+        },
+        "CELL 60B": {
+          "notebook": "/content/drive/MyDrive/Colab Notebooks/Paper1_Phase1_RUN.ipynb",
+          "cell_index": 63
+        },
+        "CELL 60C": {
+          "notebook": "/content/drive/MyDrive/Colab Notebooks/Paper1_Phase1_RUN.ipynb",
+          "cell_index": 65
+        },
+        "CELL 60D": {
+          "notebook": "/content/drive/MyDrive/Colab Notebooks/Paper1_Phase1_RUN.ipynb",
+          "cell_index": 66
+        },
+        "CELL 60E": {
+          "notebook": "/content/drive/MyDrive/Colab Notebooks/Paper1_Phase1_RUN.ipynb",
+          "cell_index": 67
+        }
+      }
+    },
+    "exact_row_duplicate_id_source": {
+      "closed": true,
+      "detail": {
+        "hit_count": 36,
+        "sources": [
+          {
+            "notebook": "/content/drive/MyDrive/Colab Notebooks/Paper1_Phase1_RUN.ipynb",
+            "cell_index": 25
+          },
+          {
+            "notebook": "/content/drive/MyDrive/Colab Notebooks/Paper1_Phase1_RUN.ipynb",
+            "cell_index": 26
+          },
+          {
+            "notebook": "/content/drive/MyDrive/Colab Notebooks/Paper1_Phase1_RUN.ipynb",
+            "cell_index": 27
+          },
+          {
+            "notebook": "/content/drive/MyDrive/Colab Notebooks/Paper1_Phase1_RUN.ipynb",
+            "cell_index": 29
+          },
+          {
+            "notebook": "/content/drive/MyDrive/Colab Notebooks/Paper1_Phase1_RUN.ipynb",
+            "cell_index": 30
+          },
+          {
+            "notebook": "/content/drive/MyDrive/Colab Notebooks/Paper1_Phase1_RUN.ipynb",
+            "cell_index": 31
+          },
+          {
+            "notebook": "/content/drive/MyDrive/Colab Notebooks/Paper1_Phase1_RUN.ipynb",
+            "cell_index": 32
+          },
+          {
+            "notebook": "/content/drive/MyDrive/Colab Notebooks/Paper1_Phase1_RUN.ipynb",
+            "cell_index": 37
+          },
+          {
+            "notebook": "/content/drive/MyDrive/Colab Notebooks/Paper1_Phase1_RUN.ipynb",
+            "cell_index": 38
+          },
+          {
+            "notebook": "/content/drive/MyDrive/Colab Notebooks/Paper1_Phase1_RUN.ipynb",
+            "cell_index": 41
+          },
+          {
+            "notebook": "/content/drive/MyDrive/Colab Notebooks/Paper1_Phase1_RUN.ipynb",
+            "cell_index": 42
+          },
+          {
+            "notebook": "/content/drive/MyDrive/Colab Notebooks/Paper1_Phase1_RUN.ipynb",
+            "cell_index": 43
+          },
+          {
+            "notebook": "/content/drive/MyDrive/Colab Notebooks/Paper1_Phase1_RUN.ipynb",
+            "cell_index": 44
+          },
+          {
+            "notebook": "/content/drive/MyDrive/Colab Notebooks/Paper1_Phase1_RUN.ipynb",
+            "cell_index": 45
+          },
+          {
+            "notebook": "/content/drive/MyDrive/Colab Notebooks/Paper1_Phase1_RUN.ipynb",
+            "cell_index": 46
+          },
+          {
+            "notebook": "/content/drive/MyDrive/Colab Notebooks/Paper1_Phase1_RUN.ipynb",
+            "cell_index": 49
+          },
+          {
+            "notebook": "/content/drive/MyDrive/Colab Notebooks/Paper1_Phase1_RUN.ipynb",
+            "cell_index": 51
+          },
+          {
+            "notebook": "/content/drive/MyDrive/Colab Notebooks/Paper1_Phase1_RUN.ipynb",
+            "cell_index": 53
+          },
+          {
+            "notebook": "/content/drive/MyDrive/Colab Notebooks/Paper1_Phase1_RUN.ipynb",
+            "cell_index": 54
+          },
+          {
+            "notebook": "/content/drive/MyDrive/Colab Notebooks/Paper1_Phase1_RUN.ipynb",
+            "cell_index": 55
+          },
+          {
+            "notebook": "/content/drive/MyDrive/Colab Notebooks/Paper1_Phase1_RUN.ipynb",
+            "cell_index": 56
+          },
+          {
+            "notebook": "/content/drive/MyDrive/Colab Notebooks/Paper1_Phase1_RUN.ipynb",
+            "cell_index": 57
+          },
+          {
+            "notebook": "/content/drive/MyDrive/Colab Notebooks/Paper1_Phase1_RUN.ipynb",
+            "cell_index": 58
+          },
+          {
+            "notebook": "/content/drive/MyDrive/Colab Notebooks/Paper1_Phase1_RUN.ipynb",
+            "cell_index": 59
+          },
+          {
+            "notebook": "/content/drive/MyDrive/Colab Notebooks/Paper1_Phase1_RUN.ipynb",
+            "cell_index": 60
+          },
+          {
+            "notebook": "/content/drive/MyDrive/Colab Notebooks/Paper1_Phase1_RUN.ipynb",
+            "cell_index": 62
+          },
+          {
+            "notebook": "/content/drive/MyDrive/Colab Notebooks/Paper1_Phase1_RUN.ipynb",
+            "cell_index": 70
+          },
+          {
+            "notebook": "/content/drive/MyDrive/Colab Notebooks/Paper1_Phase1_RUN.ipynb",
+            "cell_index": 71
+          },
+          {
+            "notebook": "/content/drive/MyDrive/Colab Notebooks/Paper1_Phase1_RUN.ipynb",
+            "cell_index": 72
+          },
+          {
+            "notebook": "/content/drive/MyDrive/Colab Notebooks/Paper1_Phase1_RUN.ipynb",
+            "cell_index": 73
+          },
+          {
+            "notebook": "/content/drive/MyDrive/Colab Notebooks/Paper1_Phase1_RUN.ipynb",
+            "cell_index": 74
+          },
+          {
+            "notebook": "/content/drive/MyDrive/Colab Notebooks/Paper1_Phase1_RUN.ipynb",
+            "cell_index": 75
+          },
+          {
+            "notebook": "/content/drive/MyDrive/Colab Notebooks/Paper1_Phase1_RUN.ipynb",
+            "cell_index": 76
+          },
+          {
+            "notebook": "/content/drive/MyDrive/Colab Notebooks/Paper1_Phase1_RUN.ipynb",
+            "cell_index": 77
+          },
+          {
+            "notebook": "/content/drive/MyDrive/Colab Notebooks/Paper1_Phase1_RUN.ipynb",
+            "cell_index": 78
+          },
+          {
+            "notebook": "/content/drive/MyDrive/Colab Notebooks/Paper1_Phase1_RUN.ipynb",
+            "cell_index": 83
+          }
+        ]
+      }
+    },
+    "exact_environment": {
+      "closed": true,
+      "detail": {
+        "python": "3.13.15 (main, Aug  6 2026, 11:06:22) [GCC 13.3.0]",
+        "platform": "Linux-6.6.122+-x86_64-with-glibc2.39",
+        "captured_at": "2026-09-11T16:13:05.635501+00:00",
+        "torch": "2.11.0+cu128",
+        "transformers": "5.16.1",
+        "accelerate": "1.14.0",
+        "tokenizers": "0.23.1",
+        "safetensors": "0.8.0",
+        "sentencepiece": "0.2.2",
+        "numpy": "2.1.3",
+        "pandas": "2.2.3",
+        "sklearn": "1.6.1",
+        "statsmodels": "0.15.0",
+        "cuda_runtime_reported_by_torch": "12.8",
+        "cuda_available": true,
+        "gpu": "Tesla T4"
+      }
+    },
+    "data_translation_provenance": {
+      "closed": true,
+      "detail": {
+        "dataset_doi": "10.17632/7zryc6k76z.3",
+        "version": 3,
+        "license": "CC BY 4.0",
+        "local_matches": 2
+      }
+    }
+  },
+  "scientific_results_changed": false,
+  "new_statistical_tests": false
+}

@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "closed_at": "2026-09-11T16:26:28.148355+00:00",
+  "environment_tier": "HISTORICAL_MODEL_STACK_LOCKED_AND_HISTORICAL_STAT_STACK_ATTESTED",
+  "historical_training_environment_locked": true,
+  "historical_training_transformers": "4.57.6",
+  "current_reference_transformers": "5.16.1",
+  "historical_training_tokenizers": "0.22.2",
+  "current_reference_tokenizers": "0.23.1",
+  "historical_stat_versions_complete": true,
+  "reference_statistical_environment_pinned": true,
+  "scientific_results_changed": false,
+  "scientific_results_recomputed": false,
+  "training_rerun": false,
+  "environment_provenance": "/content/drive/MyDrive/IGAR-Paper1-Reproducibility/environment/environment_provenance_STRICT.json",
+  "historical_training_requirements": "/content/drive/MyDrive/IGAR-Paper1-Reproducibility/environment/requirements-HISTORICAL-TRAINING.txt",
+  "reference_stat_requirements": "/content/drive/MyDrive/IGAR-Paper1-Reproducibility/environment/requirements-REFERENCE-STATISTICAL-REPRODUCTION.txt",
+  "pip_freeze": "/content/drive/MyDrive/IGAR-Paper1-Reproducibility/environment/pip-freeze-CURRENT-REFERENCE-RUNTIME.txt"
+}

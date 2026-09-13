@@ -1,0 +1,14 @@
+{
+  "release_name": "IGAR Paper 1 Public Reproducibility Release",
+  "version": "1.0.0",
+  "public_release_status": "READY_FOR_GITHUB_ZENODO",
+  "canonical_reproducibility_status": "CLOSED",
+  "canonical_closure_level": "STRICT_FORENSIC_COMPONENT_VERIFIED",
+  "canonical_strict_zip_sha256": "ae8eb3d4400e32ae52a7b6526420bd8421f36af1f5d27a576cb56119e7c96d89",
+  "scientific_source_component_set_sha256": "bc5ec1a72c7168be6deba93036cb444748611f3a6e3735d47ffb9f479c779530",
+  "canonical_checksum_manifest_sha256": "c1a594f0a9138e458345581dd5087977ce903e50bf28016161940ac57b6dfef2",
+  "raw_dataset_included": false,
+  "scientific_results_recomputed_for_public_release": false,
+  "training_rerun_for_public_release": false,
+  "new_statistical_tests_for_public_release": false
+}

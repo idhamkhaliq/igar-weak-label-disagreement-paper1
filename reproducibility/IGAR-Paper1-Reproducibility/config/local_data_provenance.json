@@ -1,0 +1,63 @@
+{
+  "dataset_name": "IGAR: Indonesian Government App Review Dataset",
+  "repository": "Mendeley Data",
+  "version": 3,
+  "version_publication_date": "2025-11-07",
+  "dataset_doi": "10.17632/7zryc6k76z.3",
+  "data_article_doi": "10.1016/j.dib.2026.112708",
+  "license": "CC BY 4.0",
+  "official_files_documented_by_data_article": [
+    "Rating_labeled.csv",
+    "VADER_labeled.csv"
+  ],
+  "vader_file_documented_fields_include": [
+    "app",
+    "content",
+    "score",
+    "at",
+    "appVersion",
+    "translation",
+    "vader_neg",
+    "vader_neu",
+    "vader_pos",
+    "vader_compound",
+    "vader_label",
+    "vader_confidence"
+  ],
+  "study_raw_dataset_sha256": "852c8b662224bd62418ef7b7dac15b9e43c9a6b4cdf0fef6239042203c2eccb0",
+  "local_download_date": null,
+  "local_source_filename": null,
+  "provenance_completion": "colab_close_gaps.py will inspect project manifests/files and record locally available source filename/timestamps without inventing a download date.",
+  "captured_at": "2026-09-11T16:13:14.010513+00:00",
+  "project_root": "/content/drive/MyDrive/IGAR_Paper1",
+  "candidate_raw_files": [
+    {
+      "path": "/content/drive/MyDrive/IGAR_Paper1/data/raw/VADER_labeled.csv",
+      "size_bytes": 112714141,
+      "mtime_utc": "2026-09-10T19:08:32+00:00",
+      "sha256": "852c8b662224bd62418ef7b7dac15b9e43c9a6b4cdf0fef6239042203c2eccb0"
+    },
+    {
+      "path": "/content/drive/MyDrive/IGAR_Paper1/data/raw/VADER_labeled.csv",
+      "size_bytes": 112714141,
+      "mtime_utc": "2026-09-10T19:08:32+00:00",
+      "sha256": "852c8b662224bd62418ef7b7dac15b9e43c9a6b4cdf0fef6239042203c2eccb0"
+    }
+  ],
+  "sha256_matching_local_raw_files": [
+    {
+      "path": "/content/drive/MyDrive/IGAR_Paper1/data/raw/VADER_labeled.csv",
+      "size_bytes": 112714141,
+      "mtime_utc": "2026-09-10T19:08:32+00:00",
+      "sha256": "852c8b662224bd62418ef7b7dac15b9e43c9a6b4cdf0fef6239042203c2eccb0"
+    },
+    {
+      "path": "/content/drive/MyDrive/IGAR_Paper1/data/raw/VADER_labeled.csv",
+      "size_bytes": 112714141,
+      "mtime_utc": "2026-09-10T19:08:32+00:00",
+      "sha256": "852c8b662224bd62418ef7b7dac15b9e43c9a6b4cdf0fef6239042203c2eccb0"
+    }
+  ],
+  "download_date_policy": "Not invented. If no contemporaneous download log exists, report dataset version/publication date and local file mtime separately rather than claiming mtime is download date.",
+  "translation_provenance": "The published VADER_labeled.csv already documents translation plus VADER fields; this study uses the dataset-provided translation-mediated VADER supervision rather than requiring a new external translation API call for reproduction."
+}

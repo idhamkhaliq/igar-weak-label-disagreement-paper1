@@ -1,0 +1,11 @@
+{
+  "checkpoint": "indobenchmark/indobert-base-p1",
+  "revision": "c2cd0b51ddce6580eb35263b39b0a1e5fb0a39e2",
+  "hidden_size": 768,
+  "num_hidden_layers": 12,
+  "max_position_embeddings": 512,
+  "max_sequence_length_used": 128,
+  "tokenizer_gate6a_reported": "BertTokenizerFast",
+  "tokenizer_later_inference_reported": "BertTokenizer",
+  "tokenizer_release_note": "Final public script must explicitly record tokenizer class/use_fast; this reporting discrepancy did not change frozen hashes/results."
+}

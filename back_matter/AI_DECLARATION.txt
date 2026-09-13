@@ -1,0 +1,3 @@
+Declaration of generative AI and AI-assisted technologies in the manuscript preparation process
+
+During the preparation of this manuscript, the authors used ChatGPT (OpenAI) to support manuscript organization, academic-language refinement, drafting, and consistency checking based on analyses, results, and methodological information supplied and verified by the authors. The tool was not used to generate or alter the underlying scientific data or to replace author verification of the frozen statistical and machine-learning analyses reported in the study. After using this tool, the authors reviewed and edited the manuscript as needed and take full responsibility for the content of the publication.

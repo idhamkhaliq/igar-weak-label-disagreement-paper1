@@ -1,0 +1,354 @@
+{
+  "status": "PASS",
+  "environment_tier": "HISTORICAL_MODEL_STACK_LOCKED_AND_HISTORICAL_STAT_STACK_ATTESTED",
+  "historical_scientific_training_environment": {
+    "environment_role": "HISTORICAL_SCIENTIFIC_TRAINING_ENVIRONMENT",
+    "authoritative_source": "Gate 6A / Gate 6B scientific freeze",
+    "gate6a_id": "f4e14c6019ae",
+    "protocol_id": "5b7ffaa036af",
+    "overflow_policy_id": "61ec4762487c",
+    "python": "3.13.15",
+    "torch": "2.11.0+cu128",
+    "cuda": "12.8",
+    "gpu": "Tesla T4",
+    "transformers": "4.57.6",
+    "accelerate": "1.14.0",
+    "tokenizers": "0.22.2",
+    "safetensors": "0.8.0",
+    "sentencepiece": "0.2.2",
+    "attention_implementation": "eager",
+    "torch_deterministic_algorithms": true,
+    "warn_only": false,
+    "tf32": false
+  },
+  "current_reference_reproduction_environment": {
+    "environment_role": "CURRENT_REFERENCE_REPRODUCTION_ENVIRONMENT",
+    "captured_at": "2026-09-11T16:25:14.213412+00:00",
+    "python": "3.13.15 (main, Aug  6 2026, 11:06:22) [GCC 13.3.0]",
+    "platform": "Linux-6.6.122+-x86_64-with-glibc2.39",
+    "torch": "2.11.0+cu128",
+    "transformers": "5.16.1",
+    "accelerate": "1.14.0",
+    "tokenizers": "0.23.1",
+    "safetensors": "0.8.0",
+    "sentencepiece": "0.2.2",
+    "numpy": "2.1.3",
+    "pandas": "2.2.3",
+    "sklearn": "1.6.1",
+    "statsmodels": "0.15.0",
+    "cuda_runtime_reported_by_torch": "12.8",
+    "cuda_available": true,
+    "gpu": "Tesla T4"
+  },
+  "training_version_local_evidence": {
+    "torch": {
+      "locked_version": "2.11.0+cu128",
+      "notebook_hit_count": 4,
+      "hits": [
+        {
+          "cell_index": 39,
+          "location": "output",
+          "matching_lines": [
+            "PyTorch: 2.11.0+cu128"
+          ]
+        },
+        {
+          "cell_index": 42,
+          "location": "output",
+          "matching_lines": [
+            "PyTorch: 2.11.0+cu128"
+          ]
+        },
+        {
+          "cell_index": 58,
+          "location": "source",
+          "matching_lines": [
+            "    \"2.11.0+cu128\""
+          ]
+        },
+        {
+          "cell_index": 103,
+          "location": "output",
+          "matching_lines": [
+            "        \"torch\": \"2.11.0+cu128\",",
+            "        \"torch\": \"2.11.0+cu128\","
+          ]
+        }
+      ],
+      "project_file_hit_count": 5,
+      "project_files": [
+        "/content/drive/MyDrive/IGAR_Paper1/phase3/gates/gate6a1_environment_model_access.json",
+        "/content/drive/MyDrive/IGAR_Paper1/phase3/gates/gate6a_pre_pilot_readiness.json",
+        "/content/drive/MyDrive/IGAR_Paper1/phase3/configs/phase3_environment_f4e14c6019ae.json",
+        "/content/drive/MyDrive/IGAR_Paper1/phase3/gate6b/configs/RQ4_protocol_95c8169c72d8.json",
+        "/content/drive/MyDrive/IGAR_Paper1/phase3/gate6b/configs/RQ4_protocol_FINAL_5b7ffaa036af.json"
+      ]
+    },
+    "transformers": {
+      "locked_version": "4.57.6",
+      "notebook_hit_count": 4,
+      "hits": [
+        {
+          "cell_index": 39,
+          "location": "output",
+          "matching_lines": [
+            "  transformers   : 4.57.6",
+            "Transformers: 4.57.6"
+          ]
+        },
+        {
+          "cell_index": 40,
+          "location": "output",
+          "matching_lines": [
+            "Transformers environment verified: 4.57.6"
+          ]
+        },
+        {
+          "cell_index": 42,
+          "location": "output",
+          "matching_lines": [
+            "Transformers: 4.57.6"
+          ]
+        },
+        {
+          "cell_index": 58,
+          "location": "source",
+          "matching_lines": [
+            "    \"4.57.6\""
+          ]
+        }
+      ],
+      "project_file_hit_count": 15,
+      "project_files": [
+        "/content/drive/MyDrive/IGAR_Paper1/phase3/gates/gate6a1_environment_model_access.json",
+        "/content/drive/MyDrive/IGAR_Paper1/phase3/gates/gate6a_pre_pilot_readiness.json",
+        "/content/drive/MyDrive/IGAR_Paper1/phase3/configs/phase3_environment_f4e14c6019ae.json",
+        "/content/drive/MyDrive/IGAR_Paper1/phase3/rq4_final/runs/seed_42_ModelV/final_model/config.json",
+        "/content/drive/MyDrive/IGAR_Paper1/phase3/rq4_final/runs/seed_42_ModelV/checkpoints/checkpoint_step_002000/config.json",
+        "/content/drive/MyDrive/IGAR_Paper1/phase3/rq4_final/runs/seed_42_ModelV/checkpoints/checkpoint_step_004000/config.json",
+        "/content/drive/MyDrive/IGAR_Paper1/phase3/rq4_final/runs/seed_42_ModelV/checkpoints/checkpoint_step_006000/config.json",
+        "/content/drive/MyDrive/IGAR_Paper1/phase3/rq4_final/runs/seed_42_ModelR/final_model/config.json",
+        "/content/drive/MyDrive/IGAR_Paper1/phase3/rq4_final/runs/seed_42_ModelR/checkpoints (1)/checkpoint_step_002000/config.json",
+        "/content/drive/MyDrive/IGAR_Paper1/phase3/rq4_final/runs/seed_42_ModelR/checkpoints (1)/checkpoint_step_004000/config.json",
+        "/content/drive/MyDrive/IGAR_Paper1/phase3/rq4_final/runs/seed_42_ModelR/checkpoints (1)/checkpoint_step_006000/config.json",
+        "/content/drive/MyDrive/IGAR_Paper1/phase3/gate6b/configs/RQ4_protocol_95c8169c72d8.json",
+        "/content/drive/MyDrive/IGAR_Paper1/phase3/gate6b/configs/RQ4_protocol_FINAL_5b7ffaa036af.json",
+        "/content/drive/MyDrive/IGAR_Paper1/phase3/models/ModelR_pilot_final/config.json",
+        "/content/drive/MyDrive/IGAR_Paper1/phase3/models/ModelV_pilot_final/config.json"
+      ]
+    },
+    "accelerate": {
+      "locked_version": "1.14.0",
+      "notebook_hit_count": 3,
+      "hits": [
+        {
+          "cell_index": 39,
+          "location": "output",
+          "matching_lines": [
+            "  accelerate     : 1.14.0",
+            "Accelerate: 1.14.0"
+          ]
+        },
+        {
+          "cell_index": 58,
+          "location": "source",
+          "matching_lines": [
+            "    \"1.14.0\""
+          ]
+        },
+        {
+          "cell_index": 103,
+          "location": "output",
+          "matching_lines": [
+            "        \"accelerate\": \"1.14.0\",",
+            "        \"accelerate\": \"1.14.0\","
+          ]
+        }
+      ],
+      "project_file_hit_count": 4,
+      "project_files": [
+        "/content/drive/MyDrive/IGAR_Paper1/phase3/gates/gate6a1_environment_model_access.json",
+        "/content/drive/MyDrive/IGAR_Paper1/phase3/configs/phase3_environment_f4e14c6019ae.json",
+        "/content/drive/MyDrive/IGAR_Paper1/phase3/gate6b/configs/RQ4_protocol_95c8169c72d8.json",
+        "/content/drive/MyDrive/IGAR_Paper1/phase3/gate6b/configs/RQ4_protocol_FINAL_5b7ffaa036af.json"
+      ]
+    },
+    "tokenizers": {
+      "locked_version": "0.22.2",
+      "notebook_hit_count": 2,
+      "hits": [
+        {
+          "cell_index": 39,
+          "location": "output",
+          "matching_lines": [
+            "  tokenizers     : 0.22.2",
+            "Tokenizers: 0.22.2"
+          ]
+        },
+        {
+          "cell_index": 58,
+          "location": "source",
+          "matching_lines": [
+            "    \"0.22.2\""
+          ]
+        }
+      ],
+      "project_file_hit_count": 4,
+      "project_files": [
+        "/content/drive/MyDrive/IGAR_Paper1/phase3/gates/gate6a1_environment_model_access.json",
+        "/content/drive/MyDrive/IGAR_Paper1/phase3/configs/phase3_environment_f4e14c6019ae.json",
+        "/content/drive/MyDrive/IGAR_Paper1/phase3/gate6b/configs/RQ4_protocol_95c8169c72d8.json",
+        "/content/drive/MyDrive/IGAR_Paper1/phase3/gate6b/configs/RQ4_protocol_FINAL_5b7ffaa036af.json"
+      ]
+    },
+    "safetensors": {
+      "locked_version": "0.8.0",
+      "notebook_hit_count": 2,
+      "hits": [
+        {
+          "cell_index": 39,
+          "location": "output",
+          "matching_lines": [
+            "  safetensors    : 0.8.0",
+            "Safetensors: 0.8.0"
+          ]
+        },
+        {
+          "cell_index": 103,
+          "location": "output",
+          "matching_lines": [
+            "        \"safetensors\": \"0.8.0\",",
+            "        \"safetensors\": \"0.8.0\","
+          ]
+        }
+      ],
+      "project_file_hit_count": 1,
+      "project_files": [
+        "/content/drive/MyDrive/IGAR_Paper1/phase3/configs/phase3_environment_f4e14c6019ae.json"
+      ]
+    },
+    "sentencepiece": {
+      "locked_version": "0.2.2",
+      "notebook_hit_count": 2,
+      "hits": [
+        {
+          "cell_index": 39,
+          "location": "output",
+          "matching_lines": [
+            "  sentencepiece  : 0.2.2"
+          ]
+        },
+        {
+          "cell_index": 103,
+          "location": "output",
+          "matching_lines": [
+            "        \"sentencepiece\": \"0.2.2\",",
+            "        \"sentencepiece\": \"0.2.2\","
+          ]
+        }
+      ],
+      "project_file_hit_count": 1,
+      "project_files": [
+        "/content/drive/MyDrive/IGAR_Paper1/phase3/configs/phase3_environment_f4e14c6019ae.json"
+      ]
+    }
+  },
+  "historical_statistical_package_evidence": {
+    "numpy": {
+      "explicit_historical_versions_found": [
+        "2.1.3"
+      ],
+      "evidence": [
+        {
+          "cell_index": 3,
+          "location": "output",
+          "version": "2.1.3",
+          "context": "NumPy: 2.1.3"
+        },
+        {
+          "cell_index": 103,
+          "location": "output",
+          "version": "2.1.3",
+          "context": "numpy\": \"2.1.3"
+        },
+        {
+          "cell_index": 103,
+          "location": "output",
+          "version": "2.1.3",
+          "context": "numpy\": \"2.1.3"
+        }
+      ]
+    },
+    "pandas": {
+      "explicit_historical_versions_found": [
+        "2.2.3"
+      ],
+      "evidence": [
+        {
+          "cell_index": 3,
+          "location": "output",
+          "version": "2.2.3",
+          "context": "Pandas: 2.2.3"
+        },
+        {
+          "cell_index": 103,
+          "location": "output",
+          "version": "2.2.3",
+          "context": "pandas\": \"2.2.3"
+        },
+        {
+          "cell_index": 103,
+          "location": "output",
+          "version": "2.2.3",
+          "context": "pandas\": \"2.2.3"
+        }
+      ]
+    },
+    "sklearn": {
+      "explicit_historical_versions_found": [
+        "1.6.1"
+      ],
+      "evidence": [
+        {
+          "cell_index": 103,
+          "location": "output",
+          "version": "1.6.1",
+          "context": "sklearn\": \"1.6.1"
+        },
+        {
+          "cell_index": 103,
+          "location": "output",
+          "version": "1.6.1",
+          "context": "sklearn\": \"1.6.1"
+        }
+      ]
+    },
+    "statsmodels": {
+      "explicit_historical_versions_found": [
+        "0.15.0"
+      ],
+      "evidence": [
+        {
+          "cell_index": 103,
+          "location": "output",
+          "version": "0.15.0",
+          "context": "statsmodels\": \"0.15.0"
+        },
+        {
+          "cell_index": 103,
+          "location": "output",
+          "version": "0.15.0",
+          "context": "statsmodels\": \"0.15.0"
+        }
+      ]
+    }
+  },
+  "historical_statistical_versions_complete": true,
+  "interpretation": {
+    "current_transformers_does_not_replace_training_transformers": true,
+    "current_tokenizers_does_not_replace_training_tokenizers": true,
+    "current_numpy_pandas_sklearn_statsmodels_role": "current environment capture; historical versions separately attested",
+    "scientific_results_changed": false,
+    "scientific_results_recomputed": false
+  }
+}

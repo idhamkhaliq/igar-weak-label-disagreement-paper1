@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "closed_at": "2026-09-11T16:20:04.938066+00:00",
+  "authoritative_notebook": "/content/drive/MyDrive/Colab Notebooks/Paper1_Phase1_RUN.ipynb",
+  "notebook_sha256": "b8cdc2ec148ca65dc90e5124776fcf05a385a4d930eb1fb0a245c1d1f059340f",
+  "cell_60A_60E": {
+    "closed": true,
+    "method": "explicit marker-bounded extraction",
+    "archive_json": "/content/drive/MyDrive/IGAR-Paper1-Reproducibility/notebooks/Cell60A_60E_EXACT_SOURCE_ARCHIVE.json",
+    "archive_py": "/content/drive/MyDrive/IGAR-Paper1-Reproducibility/src/08_train_paired_indobert_EXACT_EXTRACT.py"
+  },
+  "row_duplicate_id_source": {
+    "closed": true,
+    "method": "actual assignment detection, not generic keyword hits",
+    "row_id_assignment_cells": 6,
+    "duplicate_group_id_assignment_cells": 2,
+    "included_source_cells": 8,
+    "archive_json": "/content/drive/MyDrive/IGAR-Paper1-Reproducibility/notebooks/row_id_duplicate_group_id_EXACT_SOURCE_ARCHIVE.json",
+    "archive_py": "/content/drive/MyDrive/IGAR-Paper1-Reproducibility/src/04_exact_row_duplicate_id_cells.py"
+  },
+  "scientific_results_changed": false,
+  "scientific_results_recomputed": false,
+  "training_rerun": false
+}
