@@ -1,0 +1,34 @@
+{
+  "title": "IGAR Paper 1: Weak-Label Disagreement and Transformer Supervision-Source Sensitivity — Reproducibility Package",
+  "description": "Reproducibility materials for the study \"Characterizing Weak-Label Disagreement in Indonesian Digital Public-Service Application Reviews: Transformer Sensitivity to Supervision-Source Choice\". The study characterizes naturally occurring disagreement between rating-derived and translation-mediated VADER weak sentiment supervision and evaluates downstream Transformer sensitivity using a paired supervision-source design. The IGAR dataset is not redistributed in this package; it is publicly available from Mendeley Data, Version 3, DOI 10.17632/7zryc6k76z.3.",
+  "creators": [
+    {
+      "name": "Khaliq, Idham",
+      "orcid": "0009-0004-5214-5583",
+      "affiliation": "Master's Program in Informatics, Faculty of Industrial Technology, Universitas Ahmad Dahlan"
+    },
+    {
+      "name": "Uturestantix",
+      "orcid": "0000-0001-8321-8731",
+      "affiliation": "Department of Management, Faculty of Economics and Business, Universitas Cenderawasih"
+    }
+  ],
+  "keywords": [
+    "weak supervision",
+    "label disagreement",
+    "sentiment analysis",
+    "transformer models",
+    "Indonesian NLP",
+    "digital public services"
+  ],
+  "license": "MIT",
+  "upload_type": "software",
+  "version": "1.0.0",
+  "related_identifiers": [
+    {
+      "identifier": "10.17632/7zryc6k76z.3",
+      "relation": "isSupplementTo",
+      "resource_type": "dataset"
+    }
+  ]
+}
