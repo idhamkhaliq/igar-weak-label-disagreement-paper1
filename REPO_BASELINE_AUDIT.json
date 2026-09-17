@@ -1,0 +1,10 @@
+{
+  "audit_date": "2026-09-18",
+  "repository": "idhamkhaliq/igar-weak-label-disagreement-paper1",
+  "pre_overlay_main_commit": "795a5e187e5aef15f856d02ca01ce42e1e68e319",
+  "v1_0_0_tag_commit": "795a5e187e5aef15f856d02ca01ce42e1e68e319",
+  "baseline_commits_match": true,
+  "canonical_archive_sha256_verified": "ae8eb3d4400e32ae52a7b6526420bd8421f36af1f5d27a576cb56119e7c96d89",
+  "working_tree_expected_clean_before_overlay": true,
+  "audit_note": "This file records the audited pre-v1.1.0 baseline. It is not a replacement for the immutable v1.0.0 tag."
+}

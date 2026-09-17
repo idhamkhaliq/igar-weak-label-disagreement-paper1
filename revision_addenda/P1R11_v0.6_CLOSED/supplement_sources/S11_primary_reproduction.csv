@@ -1,0 +1,14 @@
+metric,value
+primary_n,22500
+agreement_n,13196
+disagreement_n,9304
+mean_jsd_agreement,0.051900226898533124
+mean_jsd_disagreement,0.4064689070050506
+beta,0.3545686801065177
+cluster_robust_se,0.0061078360912633954
+ci95_low,0.3425966311351993
+ci95_high,0.36654072907783614
+paired_jsd_max_abs_diff,0.0
+all_33_targets_pass,True
+target_count,33
+pass_count,33

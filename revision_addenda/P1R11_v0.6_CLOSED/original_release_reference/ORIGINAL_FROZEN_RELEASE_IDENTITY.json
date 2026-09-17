@@ -1,0 +1,24 @@
+{
+  "original_release_status": "CLOSED / PASS — STRICT FORENSIC",
+  "original_drive_folder_url": "https://drive.google.com/drive/folders/17Nqn_LgC2r6fv_F3W3sZpXG5tK95ujNf",
+  "canonical_zip_filename": "IGAR-Paper1-Reproducibility.zip",
+  "canonical_zip_sha256_recorded": "ae8eb3d4400e32ae52a7b6526420bd8421f36af1f5d27a576cb56119e7c96d89",
+  "strict_final_zip_filename": "IGAR-Paper1-Reproducibility_STRICT_FINAL.zip",
+  "strict_final_zip_sha256_recorded": "ae8eb3d4400e32ae52a7b6526420bd8421f36af1f5d27a576cb56119e7c96d89",
+  "scientific_source_component_set_sha256_recorded": "bc5ec1a72c7168be6deba93036cb444748611f3a6e3735d47ffb9f479c779530",
+  "checksums_STRICT_sha256_recorded": "c1a594f0a9138e458345581dd5087977ce903e50bf28016161940ac57b6dfef2",
+  "checksums_STRICT_sha256_reverified_from_current_connected_drive_file": "c1a594f0a9138e458345581dd5087977ce903e50bf28016161940ac57b6dfef2",
+  "reproducibility_status_strict_sha256_reverified_from_current_connected_drive_file": "80cab030a275fee51eaf0573e69093cb7c88d31efad8e595fa09b96381baeebd",
+  "scientific_source_components_strict_sha256_reverified_from_current_connected_drive_file": "9fca855945ddc18a33ecf68b25e0e8ea58f42785b6794cc7a496e882124c80e3",
+  "zip_crc_integrity_recorded": "PASS",
+  "zip_bytes_rehashed_in_this_closure": false,
+  "reason_zip_not_rehashed": "The canonical ZIP is not exposed as a downloadable file on the currently connected Drive surface. Its SHA-256 is retained as the recorded release identity from the original strict-forensic record; this closure does not claim a new ZIP-byte rehash.",
+  "original_archive_unchanged": true,
+  "original_archive_unchanged_basis": "The P1R-11 workflow wrote only to a separate addendum layer. Current connected-Drive copies of the strict checksum manifest, strict status file, and scientific-source-components manifest were re-downloaded during closure and match their frozen SHA-256 identities exactly. No write operation targeted the original frozen archive.",
+  "verification_timestamp_utc": "2026-09-17T15:46:02Z",
+  "drive_metadata_observed": {
+    "checksums_STRICT_modified_time": "2026-09-11T17:04:31.645Z",
+    "REPRODUCIBILITY_STATUS_STRICT_modified_time": "2026-09-11T17:04:28.993Z",
+    "SCIENTIFIC_SOURCE_COMPONENTS_STRICT_modified_time": "2026-09-11T16:47:44.624Z"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "status": "CLOSED",
+  "blocking_checks_pass": "15/15",
+  "numerical_targets_pass": "33/33",
+  "checksum_entries": 52,
+  "result": "PASS"
+}

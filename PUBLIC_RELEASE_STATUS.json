@@ -1,14 +1,50 @@
 {
-  "release_name": "IGAR Paper 1 Public Reproducibility Release",
-  "version": "1.0.0",
-  "public_release_status": "READY_FOR_GITHUB_ZENODO",
-  "canonical_reproducibility_status": "CLOSED",
-  "canonical_closure_level": "STRICT_FORENSIC_COMPONENT_VERIFIED",
-  "canonical_strict_zip_sha256": "ae8eb3d4400e32ae52a7b6526420bd8421f36af1f5d27a576cb56119e7c96d89",
-  "scientific_source_component_set_sha256": "bc5ec1a72c7168be6deba93036cb444748611f3a6e3735d47ffb9f479c779530",
-  "canonical_checksum_manifest_sha256": "c1a594f0a9138e458345581dd5087977ce903e50bf28016161940ac57b6dfef2",
-  "raw_dataset_included": false,
-  "scientific_results_recomputed_for_public_release": false,
-  "training_rerun_for_public_release": false,
-  "new_statistical_tests_for_public_release": false
+  "schema_version": "2.0",
+  "repository": "idhamkhaliq/igar-weak-label-disagreement-paper1",
+  "repository_version": "1.1.0",
+  "release_status": "STAGED_FOR_GITHUB_RELEASE",
+  "release_model": "two_layer_provenance",
+  "original_release": {
+    "tag": "v1.0.0",
+    "commit": "795a5e187e5aef15f856d02ca01ce42e1e68e319",
+    "status": "CLOSED",
+    "closure_level": "STRICT_FORENSIC_COMPONENT_VERIFIED",
+    "canonical_strict_zip_sha256": "ae8eb3d4400e32ae52a7b6526420bd8421f36af1f5d27a576cb56119e7c96d89",
+    "scientific_source_component_set_sha256": "bc5ec1a72c7168be6deba93036cb444748611f3a6e3735d47ffb9f479c779530",
+    "canonical_checksum_manifest_sha256": "c1a594f0a9138e458345581dd5087977ce903e50bf28016161940ac57b6dfef2",
+    "immutable_policy": "Do not rewrite or retag v1.0.0 as if P1R-11 were part of the original analysis execution."
+  },
+  "revision_stage_addendum": {
+    "workflow": "P1R-11",
+    "internal_version": "0.6-closed",
+    "repository_release_tag": "v1.1.0",
+    "status": "CLOSED",
+    "blocking_checks": "15/15 PASS",
+    "numerical_targets": "33/33 PASS",
+    "addendum_zip_sha256": "ce69cda9003425b7a5c326beb1531d27efb6149591416be32beee933dfd8356b",
+    "path": "revision_addenda/P1R11_v0.6_CLOSED/",
+    "exact_zip_path": "revision_addenda/IGAR_Paper1_P1R11_Reproducibility_Addendum_v0.6_CLOSED.zip"
+  },
+  "scientific_scope": {
+    "original_analytic_samples_changed": false,
+    "trained_models_changed": false,
+    "test_predictions_changed": false,
+    "primary_rq1_rq4_estimates_changed": false,
+    "model_retraining": false,
+    "new_model_architecture": false,
+    "additional_weak_supervision_source": false,
+    "new_data_collection": false,
+    "split_change": false,
+    "revision_stage_post_hoc_sensitivity_analyses_added": true
+  },
+  "data": {
+    "raw_igar_dataset_redistributed": false,
+    "mendeley_data_doi": "10.17632/7zryc6k76z.3",
+    "license": "CC BY 4.0"
+  },
+  "zenodo": {
+    "existing_archived_release_doi": "10.5281/zenodo.22731209",
+    "v1_1_0_version_doi": null,
+    "note": "Populate the v1.1.0 version-specific DOI only after Zenodo ingests the GitHub v1.1.0 release. Do not guess it in advance."
+  }
 }

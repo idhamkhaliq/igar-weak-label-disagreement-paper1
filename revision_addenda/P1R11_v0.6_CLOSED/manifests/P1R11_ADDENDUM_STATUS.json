@@ -1,0 +1,22 @@
+{
+  "schema_version": "2.0",
+  "workflow": "P1R-11",
+  "manuscript_id": "IPM-D-26-07123",
+  "status": "CLOSED",
+  "addendum_version": "0.6-closed",
+  "closed_at_utc": "2026-09-17T15:46:02Z",
+  "verdict": "CLOSED — 15/15 BLOCKING CHECKS PASS; 33/33 NUMERICAL TARGETS PASS",
+  "blocking_check_count": 15,
+  "blocking_pass_count": 15,
+  "blocking_failures": [],
+  "all_33_targets_pass": true,
+  "target_count": 33,
+  "target_pass_count": 33,
+  "original_archive_modified": false,
+  "original_archive_unchanged": true,
+  "canonical_original_release_zip_sha256_recorded": "ae8eb3d4400e32ae52a7b6526420bd8421f36af1f5d27a576cb56119e7c96d89",
+  "canonical_zip_bytes_rehashed_in_this_closure": false,
+  "original_release_verification_note": "The original layer was not modified by P1R-11. Current Drive copies of the strict checksum manifest, strict status, and scientific-source-components manifest match their frozen SHA-256 identities. The canonical ZIP itself is not exposed as downloadable bytes, so its ae8eb3d4... hash is retained as the recorded release identity rather than falsely described as freshly rehashed.",
+  "closure_environment_note": "The archived environment is the exact canonical closure-run environment. It is not claimed to be the exact historical P1R-11 environment.",
+  "checksum_manifest_note": "manifests/SHA256SUMS.txt hashes every package file except SHA256SUMS.txt itself to avoid a self-referential checksum cycle."
+}

@@ -1,0 +1,384 @@
+{
+  "schema_version": "2.0",
+  "addendum": {
+    "name": "IGAR Paper 1 Revision-Stage Reproducibility Addendum",
+    "workflow": "P1R-11",
+    "manuscript_id": "IPM-D-26-07123",
+    "prepared_date": "2026-09-17",
+    "status": "CLOSED",
+    "version": "0.6-closed",
+    "closed_at_utc": "2026-09-17T15:46:02Z"
+  },
+  "scope": "Revision-stage P1R-11 post hoc sensitivity analyses only. The original frozen reproducibility release remains a separate provenance layer and was not written to by this workflow.",
+  "original_archive": {
+    "dataset_doi": "10.17632/7zryc6k76z.3",
+    "original_archive_modified": false,
+    "original_archive_unchanged": true,
+    "canonical_zip_sha256_recorded": "ae8eb3d4400e32ae52a7b6526420bd8421f36af1f5d27a576cb56119e7c96d89",
+    "zip_bytes_rehashed_in_this_closure": false,
+    "verification_basis": "See original_release_reference/ORIGINAL_FROZEN_RELEASE_IDENTITY.json. Critical current Drive manifest/status/component files match frozen hashes; the recorded canonical ZIP hash is retained as release identity because ZIP bytes are not exposed on the connected Drive surface.",
+    "scope_note": {
+      "legacy_field": "new_statistical_tests",
+      "legacy_value": false,
+      "applies_to": "original frozen analysis layer only",
+      "revision_stage_additional_tests_exist": true
+    }
+  },
+  "verified_input_index": "manifests/VERIFIED_INPUT_INDEX.json",
+  "analysis_invariants": {
+    "full_source_corpus_n": 617722,
+    "rq4_cohort_n": 150000,
+    "train_n": 105000,
+    "validation_n": 22500,
+    "test_n": 22500,
+    "agreement_n": 13196,
+    "disagreement_n": 9304,
+    "class_order": [
+      "Negative",
+      "Neutral",
+      "Positive"
+    ],
+    "test_row_order_sha256": "ee4efe4d3f5e620c36f56923e4ab3481a65cdace75fae984b44cab009a508ded",
+    "protocol_id": "5b7ffaa036af",
+    "primary_mean_jsd_agreement": 0.0519,
+    "primary_mean_jsd_disagreement": 0.4065,
+    "primary_beta_reported": 0.3546,
+    "primary_beta_unrounded": 0.35456868,
+    "s1_mean_jsd": 0.4409,
+    "s2_mean_jsd": 0.3195
+  },
+  "revision_stage_reported_targets": {
+    "within_source_ratio_full_disagreement": 81.03,
+    "within_source_ratio_polarity_only_disagreement": 49.73,
+    "within_source_ratio_singleton_disagreement": 59.6,
+    "polarity_only_n": 15385,
+    "polarity_only_beta": 0.2788,
+    "polarity_only_ci95": [
+      0.261,
+      0.2966
+    ],
+    "polarity_only_retained_percent": 78.6,
+    "singleton_n": 14551,
+    "singleton_beta": 0.2985,
+    "singleton_ci95": [
+      0.2928,
+      0.3041
+    ],
+    "singleton_retained_percent": 84.2,
+    "joint_n": 9561,
+    "joint_beta": 0.2553,
+    "joint_ci95": [
+      0.2467,
+      0.2639
+    ],
+    "joint_retained_percent": 72.0,
+    "model_r_neutral_f1": 0.1069,
+    "shared_label_three_class_accuracy_difference_v_minus_r_pp": -2.45,
+    "shared_label_binary_accuracy_model_r_percent": 97.6,
+    "shared_label_binary_accuracy_model_v_percent": 97.12,
+    "shared_label_binary_accuracy_difference_v_minus_r_pp": -0.48,
+    "polarity_agreement_entropy_ratio_three_class_r_over_v": 1.4719,
+    "polarity_agreement_entropy_ratio_binary_renormalized_r_over_v": 1.3403,
+    "s1_n": 6666,
+    "s1_polarity_to_vader_neutral_n": 5862,
+    "s1_polarity_to_vader_neutral_percent": 87.94,
+    "s1_polarity_to_vader_neutral_weighted_mean_jsd": 0.48,
+    "s1_rating_neutral_to_polarity_weighted_mean_jsd": 0.1556,
+    "s1_weighted_jsd_mass_toward_vader_neutral_percent": 95.7,
+    "neutral_neutral_n": 449,
+    "neutral_neutral_mean_jsd": 0.37,
+    "neutral_neutral_median_jsd": 0.394,
+    "largest_cluster_exclusion_max_beta_change_percent": 2.06,
+    "all_repeated_text_exclusion_beta_attenuation_percent": 15.82
+  },
+  "closure_reproduction": {
+    "provenance_label": "RECONSTRUCTED CLOSURE SCRIPT; NO MODEL RETRAINING",
+    "command": "python tools/reproduce_p1r11_from_preserved_predictions.py --inputs-dir <preserved-input-root> --manifest manifests/P1R11_ADDENDUM_MANIFEST.json --out-dir <closure-output-dir>",
+    "all_33_targets_pass": true,
+    "target_count": 33,
+    "pass_count": 33,
+    "results_sha256": "5aa8288b3cf44ce1ddc01ace3a2fbe8deb05ec6a6ecf61993e4c0694aad6d5bc",
+    "validation_sha256": "ca75a8fd20e075a89c630ddf39b19ddccb1c0ce5bab27174b00592909c292ee3",
+    "primary_beta_reproduced": 0.3545686801065177,
+    "paired_jsd_max_abs_diff": 0.0,
+    "t_based_cluster_inference": true,
+    "environment_scope": "Exact environment captured for the canonical closure rerun, not claimed as the exact historical P1R-11 execution environment."
+  },
+  "artifact_index": {
+    "scripts": [
+      {
+        "path": "tools/reproduce_p1r11_from_preserved_predictions.py",
+        "sha256": "2d2ffab2db603383327c8eb6b5c7d2bec268195b1099c29fcc5c63ffd3523d93",
+        "size_bytes": 23116
+      },
+      {
+        "path": "tools/mini_parquet_snappy.py",
+        "sha256": "07f657ab57225dab039e8380df02cd490f9741cac4fa36347ec01fa695da34e9",
+        "size_bytes": 8609
+      },
+      {
+        "path": "tools/RUN_CLOSURE_IN_COLAB.md",
+        "sha256": "02dc84b03bef391585a370e7c2fa2fc411ef160a24e220f022b052736a670222",
+        "size_bytes": 785
+      },
+      {
+        "path": "tools/verify_addendum.py",
+        "sha256": "79e4fee99c94814b0eda5858ca744e4c8a32e1e110d5f621aa9e522f0252d118",
+        "size_bytes": 1937
+      }
+    ],
+    "machine_outputs": [
+      {
+        "path": "machine_outputs/P1R11_REPRODUCED_RESULTS.json",
+        "sha256": "5aa8288b3cf44ce1ddc01ace3a2fbe8deb05ec6a6ecf61993e4c0694aad6d5bc",
+        "size_bytes": 34256
+      },
+      {
+        "path": "machine_outputs/P1R11_33_TARGET_VALIDATION.json",
+        "sha256": "ca75a8fd20e075a89c630ddf39b19ddccb1c0ce5bab27174b00592909c292ee3",
+        "size_bytes": 6798
+      },
+      {
+        "path": "machine_outputs/run_stdout.json",
+        "sha256": "4cbfd92141b2abf7be4177028df2028e4442f6755838989b75d303bf1d14174b",
+        "size_bytes": 118
+      }
+    ],
+    "supplement_source_tables": [
+      {
+        "path": "supplement_sources/P1R11_SUPPLEMENT_SOURCE_SNAPSHOT.json",
+        "sha256": "ce4e53a3fcecf3c163c59141e1e973e74ffa9c7485c61db87ef7afab69cb6957",
+        "size_bytes": 28976
+      },
+      {
+        "path": "supplement_sources/S11_primary_reproduction.csv",
+        "sha256": "e0d192d0e89801c0e3b8df1640ab64aec52807b844c36d21bc50032bf000e019",
+        "size_bytes": 367
+      },
+      {
+        "path": "supplement_sources/S11_probability_integrity.csv",
+        "sha256": "1e3dbcdbd2827eca0493ad44f42768b60ad3fb0c3653c4ca826a61e7d5754fc8",
+        "size_bytes": 1467
+      },
+      {
+        "path": "supplement_sources/S12_pairwise_within_source.csv",
+        "sha256": "42ad69dfa86c3d326df3faae603b1679f8d1e75791c1550e9669a2d3c9f7718e",
+        "size_bytes": 6276
+      },
+      {
+        "path": "supplement_sources/S12_review_level_summary.csv",
+        "sha256": "31b6734a89535ac5c8f70037c4ac96a582297e11b822c088602683c22afe3a1c",
+        "size_bytes": 837
+      },
+      {
+        "path": "supplement_sources/S13_class_metrics_by_seed.csv",
+        "sha256": "d3e0f6eec7d2f1ab3dc988a9f8b779bb86162d9239f00801856bbdc571f8035c",
+        "size_bytes": 2118
+      },
+      {
+        "path": "supplement_sources/S13_class_metrics_mean.csv",
+        "sha256": "85fbbae21f8c038efc9200e9b355068524e9cb7943b879276fe8895b0635fbe9",
+        "size_bytes": 447
+      },
+      {
+        "path": "supplement_sources/S13_confusion_matrices.csv",
+        "sha256": "0f769632621ab2e8a1ed12093a19337f9aad923e8de19369284ee9d16bd489a7",
+        "size_bytes": 1584
+      },
+      {
+        "path": "supplement_sources/S13_shared_label_diagnostics.json",
+        "sha256": "7b4173afc474e614c3c54c469cc9eeb7c6c108d657e66fba2c1f7fa877b7af10",
+        "size_bytes": 172
+      },
+      {
+        "path": "supplement_sources/S13_uncertainty_by_scope.csv",
+        "sha256": "1d22db920892a53eb120fd10e8ea1fca4532cd0a1dca3de2eb2f0d8bf43a68eb",
+        "size_bytes": 1910
+      },
+      {
+        "path": "supplement_sources/S14_directional_transitions.csv",
+        "sha256": "d53d2de115e3eca2d5d0538cac75731614313bed78b0e7d099e5cb34aca05467",
+        "size_bytes": 646
+      },
+      {
+        "path": "supplement_sources/S14_joint_sensitivity.csv",
+        "sha256": "1d87c45659226bf09483badb487087934709cde5820961fadc50cb09a4245d57",
+        "size_bytes": 233
+      },
+      {
+        "path": "supplement_sources/S14_largest_cluster_exclusions.csv",
+        "sha256": "9765fcb87cfa7f2e3f06c444848716eaca989cdee8979c70e67da35021b46d42",
+        "size_bytes": 198
+      },
+      {
+        "path": "supplement_sources/S14_neutral_neutral.csv",
+        "sha256": "4aa8b736d7ae977befda5a97ca26a286689746667c16ba01055e7207477c1101",
+        "size_bytes": 105
+      },
+      {
+        "path": "supplement_sources/S14_singleton_neutral_crosstab.json",
+        "sha256": "6d7c85198f96dd36756516dd69a880f543a4bc0333c7c032ca1ca0f683d6f3f9",
+        "size_bytes": 412
+      }
+    ],
+    "closure_environment": [
+      {
+        "path": "closure_environment/pip-freeze-P1R11-CLOSURE.txt",
+        "sha256": "5fcb9bd7202040ae5239e0f9439d586c44db9082e45c5b9921f1715361c33b80",
+        "size_bytes": 10143
+      },
+      {
+        "path": "closure_environment/platform.txt",
+        "sha256": "d100fdcbbde953ca868ee7e87b2f523a00782f90217d0fa9b4d630d9604fdca9",
+        "size_bytes": 36
+      },
+      {
+        "path": "closure_environment/python_version.txt",
+        "sha256": "843f8f18440d51e1dcd67832ee9bbc40b598c46c81e0e0d2e41af8f22cb96b2e",
+        "size_bytes": 50
+      },
+      {
+        "path": "closure_environment/runtime-info-P1R11-CLOSURE.json",
+        "sha256": "c0f445347b5fd113017d9ab8ee059560723af83ce68bd899a5852e393bc85c20",
+        "size_bytes": 556
+      }
+    ],
+    "historical_execution_records": [
+      {
+        "path": "historical_execution/P1R11_33_TARGET_TRACEABILITY.json",
+        "sha256": "ce14c73cdc5fa33be397427d538aa1ffca2ca59aa3c6c74a05bd3696c725e008",
+        "size_bytes": 6654
+      },
+      {
+        "path": "historical_execution/P1R11_HISTORICAL_EXECUTION_RECOVERY.md",
+        "sha256": "a686e2a022a0a5e087cb56dc47f2533fb180765b7ed6ec06a73fe01d0c504ea2",
+        "size_bytes": 2075
+      },
+      {
+        "path": "historical_execution/P1R11_STAGE_EXECUTION_RECORDS.json",
+        "sha256": "b6d02f3ad844887766774fc7c92778d4dfb760b032576bd57381d2be91b8ea02",
+        "size_bytes": 9516
+      }
+    ],
+    "original_release_reference": [
+      {
+        "path": "original_release_reference/ORIGINAL_FROZEN_RELEASE_IDENTITY.json",
+        "sha256": "ee485b4cf34baf8739efbb44f30d5206600ae8413efb50eb30f00589987e183b",
+        "size_bytes": 2308
+      },
+      {
+        "path": "original_release_reference/REPRODUCIBILITY_STATUS_STRICT.json",
+        "sha256": "80cab030a275fee51eaf0573e69093cb7c88d31efad8e595fa09b96381baeebd",
+        "size_bytes": 4481
+      },
+      {
+        "path": "original_release_reference/SCIENTIFIC_SOURCE_COMPONENTS_STRICT.json",
+        "sha256": "9fca855945ddc18a33ecf68b25e0e8ea58f42785b6794cc7a496e882124c80e3",
+        "size_bytes": 1647
+      },
+      {
+        "path": "original_release_reference/checksums_STRICT.sha256",
+        "sha256": "c1a594f0a9138e458345581dd5087977ce903e50bf28016161940ac57b6dfef2",
+        "size_bytes": 6576
+      }
+    ],
+    "submission_crosscheck": [
+      {
+        "path": "submission_crosscheck/P1R11_SUBMISSION_NUMERICAL_CROSSCHECK.json",
+        "sha256": "4d4cc710fa220b0c1667c1c6850ff228e7ed3c767451d0cf9b89846df6c3e100",
+        "size_bytes": 2269
+      }
+    ]
+  },
+  "submission_crosscheck": {
+    "audit_date": "2026-09-17",
+    "audit_scope": "11K final numerical/document/reference/provenance cross-check",
+    "final_submission_artifacts": {
+      "manuscript": {
+        "filename": "IPM-D-26-07123_Manuscript_Anonymized_P1R11_REVISED_v2.docx",
+        "sha256": "bd2abc14d7b4e0adcd3fc3bff445ab3618a8816f7c5f900da8f687d96f8acdcc",
+        "size_bytes": 2009301
+      },
+      "supplement": {
+        "filename": "IPM-D-26-07123_Supplementary_Material_P1R11_REVISED_v2.pdf",
+        "sha256": "9cce1c8f8fefda933cf2790be407c77bf7c40eb3af317f036a5595721f87247c",
+        "size_bytes": 46085
+      },
+      "response_to_editor": {
+        "filename": "IPM-D-26-07123_Response_to_the_Editor_P1R11_REVISED.docx",
+        "sha256": "ddf2d641ae29109f60aa9f6790a39079826d3fb5291014cc54b42dcf020c54b2",
+        "size_bytes": 44734
+      },
+      "cover_letter": {
+        "filename": "IPM-D-26-07123_Cover_Letter_P1R11_REVISED.docx",
+        "sha256": "e0dbf0f1ffb329e1abd8536b87e434b0f3e0a93b512af4b4e7586fbec8d6a54a",
+        "size_bytes": 25159
+      }
+    },
+    "supplement_vs_P1R11_REPRODUCED_RESULTS": {
+      "values_compared": 103,
+      "mismatches": 0,
+      "status": "PASS"
+    },
+    "canonical_numeric_cross_document_check": {
+      "canonical_values_compared": 30,
+      "documents_compared": 4,
+      "mismatches": 0,
+      "rounding": "All observed differences were reporting precision only; all rounding was correct.",
+      "status": "PASS"
+    },
+    "s11_sha_prefix_check": {
+      "prefixes_compared": 7,
+      "mismatches": 0,
+      "includes": "six probability-array SHA-256 prefixes plus canonical test-row-order prefix",
+      "status": "PASS"
+    },
+    "manuscript_specific_checks": {
+      "cormier_author_order": "PASS",
+      "limitations_consolidated_to_eight": "PASS",
+      "binary_retraining_limitation_present": "PASS",
+      "section_4_3_cross_reference": "PASS"
+    },
+    "response_and_cover_checks": {
+      "integrity_statement_matches_section_2_15": "PASS",
+      "old_no_new_tests_language_absent": "PASS",
+      "post_hoc_section_separate_and_author_initiated": "PASS",
+      "gate_language_absent": "PASS",
+      "masters_award_absent_from_cover_letter": "PASS"
+    },
+    "audit_origin": "Completed manual 11K cross-check in the active manuscript revision workflow, followed by cryptographic locking of the audited final files."
+  },
+  "closure_checks": {
+    "original_archive_unchanged": true,
+    "original_archive_scope_note_present": true,
+    "six_probability_hashes_verified": true,
+    "test_row_order_verified": true,
+    "probability_integrity_pass": true,
+    "primary_rq4_reproduced_from_preserved_inputs_in_closure_run": true,
+    "revision_scripts_archived": true,
+    "machine_outputs_archived": true,
+    "s11_s14_sources_archived": true,
+    "canonical_closure_environment_archived": true,
+    "all_sha256_present": true,
+    "manifest_paths_match_files": true,
+    "submission_numbers_crosschecked_against_final_p1r11_package": true,
+    "no_prespecified_mislabeling": true,
+    "no_retraining_or_new_supervision_implied": true
+  },
+  "closure_policy": {
+    "status_may_be_CLOSED_only_if_all_15_blocking_checks_true": true,
+    "blocking_check_count": 15,
+    "blocking_failures": []
+  },
+  "interpretation_lock": {
+    "weak_label_disagreement_not_verified_error": true,
+    "neither_source_ground_truth": true,
+    "model_accuracy_not_source_correctness_ranking": true,
+    "within_source_variability_is_reference_not_upper_bound": true,
+    "polarity_only_is_evaluation_restriction_no_binary_retraining": true,
+    "singleton_removes_repeated_text_from_evaluation_not_training": true,
+    "shared_label_subset_is_agreement_selected_not_overall_benchmark": true,
+    "entropy_is_predictive_diffuseness_not_correctness": true,
+    "primary_beta_not_pure_source_identity_effect": true
+  }
+}

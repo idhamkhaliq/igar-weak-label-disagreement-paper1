@@ -1,0 +1,58 @@
+{
+  "status": "PASS",
+  "identity_method": "COMPONENT_LEVEL_SHA256",
+  "historical_scope": "cell index < 63",
+  "cell_104_excluded": true,
+  "training_components": [
+    {
+      "name": "CELL 60A",
+      "cell_index": 63,
+      "sha256": "2ac121dbecfda1db2d69d6ffcb641364055dacae06bbac59a98f4dda586351b4"
+    },
+    {
+      "name": "CELL 60B",
+      "cell_index": 64,
+      "sha256": "ddd0a5b0ecbde4793ee728620a6bba7745f52e13f7502f2ac66f47bcefefb445"
+    },
+    {
+      "name": "CELL 60C",
+      "cell_index": 65,
+      "sha256": "ef7abd7a49c727a96b2abb485eb961e047a4fa48a54c48590e9f0ae1499fe463"
+    },
+    {
+      "name": "CELL 60D",
+      "cell_index": 66,
+      "sha256": "065c4d77375a34c783172a94845702b035999829553ad594ed8d0d5c1406f349"
+    },
+    {
+      "name": "CELL 60E",
+      "cell_index": 67,
+      "sha256": "95cb1e437907d6167707655125062d80f9a0b8483e071332df922d0d8164287a"
+    }
+  ],
+  "row_id_assignment_cells": [
+    26
+  ],
+  "duplicate_group_id_assignment_cells": [
+    26
+  ],
+  "row_duplicate_components": [
+    {
+      "cell_index": 5,
+      "sha256": "a41a9b7ed17187f4d0dc182c801290c330840511f0942ab95c84431d726dc8fe"
+    },
+    {
+      "cell_index": 25,
+      "sha256": "fae2edebfa813840d8a743f008a48ddf08e21ec70a77bd2896c958e53e96e0b0"
+    },
+    {
+      "cell_index": 26,
+      "sha256": "6c53ebc77fcac6acf0fd9aca4c7dcfbece4569bd4245e41e54666a2e4aec5d07"
+    }
+  ],
+  "scientific_source_component_set_sha256": "bc5ec1a72c7168be6deba93036cb444748611f3a6e3735d47ffb9f479c779530",
+  "scientific_results_changed": false,
+  "scientific_results_recomputed": false,
+  "training_rerun": false,
+  "new_statistical_tests": false
+}

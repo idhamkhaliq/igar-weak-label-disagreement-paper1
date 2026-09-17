@@ -1,0 +1,94 @@
+{
+  "status": "CLOSED",
+  "closure_level": "STRICT_FORENSIC_COMPONENT_VERIFIED",
+  "closed_at": "2026-09-11T16:34:10.445136+00:00",
+  "paper": "Characterizing Weak-Label Disagreement in Indonesian Government Application Reviews: A Large-Scale Empirical Study",
+  "authoritative_notebook": "/content/drive/MyDrive/IGAR-Paper1-Reproducibility/notebooks/Paper1_Phase1_RUN_FINAL_ARCHIVE.ipynb",
+  "authoritative_notebook_sha256": "67dfc7eeeedc49dab757cef7a54dfc8757f8e8d7edbb96f23a361e7f29345e52",
+  "gaps": {
+    "gap_1_exact_cell_60A_60E_source": {
+      "closed": true,
+      "method": "explicit marker-bounded extraction",
+      "archive_json": "notebooks/Cell60A_60E_EXACT_SOURCE_ARCHIVE.json",
+      "archive_py": "src/08_train_paired_indobert_EXACT_EXTRACT.py"
+    },
+    "gap_2_exact_row_duplicate_id_source": {
+      "closed": true,
+      "method": "actual assignment detection + helper dependencies",
+      "row_id_assignment_cells": 6,
+      "duplicate_group_id_assignment_cells": 2,
+      "archive_json": "notebooks/row_id_duplicate_group_id_EXACT_SOURCE_ARCHIVE.json",
+      "archive_py": "src/04_exact_row_duplicate_id_cells.py"
+    },
+    "gap_3_environment_provenance": {
+      "closed": true,
+      "historical_model_stack": true,
+      "historical_statistical_stack": true,
+      "current_runtime_separate": true,
+      "environment_tier": "HISTORICAL_MODEL_STACK_LOCKED_AND_HISTORICAL_STAT_STACK_ATTESTED",
+      "environment_file": "environment/environment_provenance_STRICT.json"
+    },
+    "gap_4_data_translation_provenance": {
+      "closed": true,
+      "dataset_doi": "10.17632/7zryc6k76z.3",
+      "version": 3,
+      "license": "CC BY 4.0",
+      "local_matches": 2
+    }
+  },
+  "scientific_freeze": {
+    "protocol_id": "5b7ffaa036af",
+    "overflow_policy_id": "61ec4762487c",
+    "rq4_h4": "SUPPORTED",
+    "scientific_results_changed": false,
+    "scientific_results_recomputed": false,
+    "training_rerun": false,
+    "new_statistical_tests": false
+  },
+  "immutable_hashes": {
+    "raw_dataset": "852c8b662224bd62418ef7b7dac15b9e43c9a6b4cdf0fef6239042203c2eccb0",
+    "rq4_assignment": "bce0a04a9781ffe05a580c5af83d937a0df93e023bcdbac82de04d205b36a7e1",
+    "rq4_frozen_cohort": "ba13d30077a39e5aaacd6058c07454e31b0d938ebc949ce09edea7bc5a235912",
+    "tokenized_cohort": "e99c92c57ae28350c268a51a9cef66f9f44ade95a36d2fc61947ed5ff8ce6272",
+    "test_row_order": "ee4efe4d3f5e620c36f56923e4ab3481a65cdace75fae984b44cab009a508ded",
+    "three_seed_jsd": "40cbe58d590b34bc1279b56b325156cc9f10a8a75fc6eb316ed8894facfee2c1",
+    "mean_seed_jsd": "2688ce3f06ad8eb5f16bfc52b5f3185372838f92ed983f9afc334154cb739903"
+  },
+  "model_hashes": {
+    "seed42_R": "78daac294df3438bba72a1eeb35024c543ffc9e7aa78a643f144c431bf823c99",
+    "seed42_V": "5472a992eb75acc5eaede24254c601679151d3eb4b9a1423fc67c80a1c5c3a90",
+    "seed123_R": "53da37dcbd5ca2ada3d707890c9d839e93b9133c2d684bbad3bccd8a2e5d4c84",
+    "seed123_V": "7be38e2def25d35408024f3156f0c662614657d527d02241882b30c5e2472e88",
+    "seed2026_R": "130d4bdc1e77312b4d65fb2719791121f07a00a4fb47602fe307aa2577864754",
+    "seed2026_V": "92ed977edc8b977e291a8707d2a1aa85781ad68f0746c7c7522b18278855b86c"
+  },
+  "test_probability_hashes": {
+    "seed42_R": "7c16acbf2547f09ec2c1d58406b541254e94375e63269126f75edb0fab7f7a05",
+    "seed42_V": "537ee8517e58f9e07891440c7545fc7c983c87354311c9457855b922d53237a5",
+    "seed123_R": "95853e41f906e1e2de17e308b59ebf4957f59b4a1eced265356f378a0614075f",
+    "seed123_V": "6646d4f9c0fa1022b7f5fe7eef483a79a3e92bdb3e8018d51cdda83c05c40226",
+    "seed2026_R": "7b5d0ddbc75c08301d4eb4f0a7eae6e4c27190d11515ebcc18676a41f8e22278",
+    "seed2026_V": "4b550ae12fbddf380a41ac38a5b6e5e918c3ebc19c75e87e1a5dcd94ee38f7c3"
+  },
+  "interpretation_lock": {
+    "preferred_term": "weak-label disagreement",
+    "either_source_is_ground_truth": false,
+    "causal_claim": false,
+    "cross_supervision_f1_superiority_claim": false
+  },
+  "finalized_at": "2026-09-11T17:04:23.196786+00:00",
+  "notebook_provenance_reconciliation": {
+    "status": "PASS",
+    "notebook_sha_drift": "RECONCILED",
+    "authoritative_scientific_source_identity": "COMPONENT_LEVEL_SHA256",
+    "scientific_source_component_set_sha256": "bc5ec1a72c7168be6deba93036cb444748611f3a6e3735d47ffb9f479c779530",
+    "scientific_scope": "cell index < 63",
+    "cell_104_false_positive": "EXCLUDED_RESOLVED",
+    "row_id_assignment_cells": [
+      26
+    ],
+    "duplicate_group_id_assignment_cells": [
+      26
+    ]
+  }
+}

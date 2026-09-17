@@ -1,0 +1,8 @@
+{
+  "captured_at_utc": "2026-09-17T13:59:02.333168+00:00",
+  "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+  "implementation": "CPython",
+  "closure_note": "Environment captured for canonical P1R-11 closure reproduction/packaging. This is not claimed to be the exact historical P1R-11 execution environment.",
+  "parquet_reader": "mini_parquet_snappy.py fallback used in this closure environment because pyarrow was unavailable locally; this changes I/O only, not estimands/formulas."
+}

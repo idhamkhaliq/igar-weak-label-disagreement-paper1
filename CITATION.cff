@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "If you use this software or reproducibility package, please cite the archived software release and the associated paper."
+message: "If you use this reproducibility package, please cite the archived software release and the associated paper."
 title: "IGAR Paper 1: Weak-Label Disagreement and Transformer Supervision-Source Sensitivity — Reproducibility Package"
 type: software
 authors:
@@ -10,8 +10,8 @@ authors:
   - name: "Uturestantix"
     orcid: "https://orcid.org/0000-0001-8321-8731"
     affiliation: "Department of Management, Faculty of Economics and Business, Universitas Cenderawasih"
-version: "1.0.0"
-date-released: "2026-09-12"
+version: "1.1.0"
+date-released: "2026-09-18"
 license: MIT
 keywords:
   - weak supervision
@@ -22,4 +22,4 @@ keywords:
   - digital public services
 repository-code: "https://github.com/idhamkhaliq/igar-weak-label-disagreement-paper1"
 abstract: >-
-  Reproducibility materials for the study "Characterizing Weak-Label Disagreement in Indonesian Digital Public-Service Application Reviews: Transformer Sensitivity to Supervision-Source Choice". The study characterizes naturally occurring disagreement between rating-derived and translation-mediated VADER weak sentiment supervision and evaluates downstream Transformer sensitivity using a paired supervision-source design. The IGAR dataset is not redistributed in this package; it is publicly available from Mendeley Data, Version 3, DOI 10.17632/7zryc6k76z.3.
+  Reproducibility materials for the study "Characterizing Weak-Label Disagreement in Indonesian Digital Public-Service Application Reviews: Transformer Sensitivity to Supervision-Source Choice". Version 1.1.0 preserves the original frozen v1.0.0 computational record and adds a separately versioned P1R-11 revision-stage reproducibility addendum containing post hoc sensitivity and diagnostic analyses reconstructed from preserved RQ4 predictions and metadata. The IGAR dataset is not redistributed in this package and remains available from Mendeley Data, Version 3, DOI 10.17632/7zryc6k76z.3.

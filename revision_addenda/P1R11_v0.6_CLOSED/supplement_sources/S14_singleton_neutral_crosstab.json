@@ -1,0 +1,22 @@
+{
+  "marginal": {
+    "singleton": {
+      "neutral_involved": 4990,
+      "polarity_only": 9561
+    },
+    "non_singleton": {
+      "neutral_involved": 2125,
+      "polarity_only": 5824
+    }
+  },
+  "conditional_on_disagreement": {
+    "singleton": {
+      "neutral_involved": 4627,
+      "polarity_only": 2366
+    },
+    "non_singleton": {
+      "neutral_involved": 2039,
+      "polarity_only": 272
+    }
+  }
+}

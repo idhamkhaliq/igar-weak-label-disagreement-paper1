@@ -1,0 +1,415 @@
+{
+  "schema_version": "1.0",
+  "audit_date": "2026-09-17",
+  "status": "PARTIAL_VERIFICATION_COMPLETE",
+  "important_distinction": "sha256_file_bytes is a hash of the Parquet file bytes. probability_array_sha256 is the original inference-stage hash of the probability array recorded by the run manifest; the two hashes are intentionally different objects.",
+  "verified_preserved_inputs": [
+    {
+      "role": "Model-R seed 42 test probabilities",
+      "staging_filename": "seed_42_ModelR_test_probabilities.parquet",
+      "staging_download_filename": "seed_42_ModelR_test_probabilities.parquet.bin",
+      "sha256_file_bytes": "be5a19ff0690a7f81c6daeadca7a9db91b44405d18ba46dae457ca33e3c02b7b",
+      "file_size_bytes": 1258560,
+      "parquet_magic_verified": true,
+      "parquet_num_rows": 22500,
+      "parquet_created_by": "parquet-cpp-arrow version 23.0.1",
+      "embedded_pandas_version": "2.2.3",
+      "schema_columns": [
+        "row_id",
+        "p_negative",
+        "p_neutral",
+        "p_positive",
+        "pred_class_id",
+        "max_confidence",
+        "entropy_nats"
+      ],
+      "drive_file_id": "1ff4ELzafBgvPffm8WBmDtrvjLWOFGiac",
+      "original_drive_path": "/content/drive/MyDrive/IGAR_Paper1/phase3/rq4_final/test_inference/predictions/seed_42_ModelR_test_probabilities.parquet",
+      "verification_note": "Hash computed from live-Drive-downloaded bytes staged in /mnt/data on 2026-09-17. Path remains null when original Drive path was not independently captured."
+    },
+    {
+      "role": "Model-R seed 123 test probabilities",
+      "staging_filename": "seed_123_ModelR_test_probabilities.parquet",
+      "staging_download_filename": "seed_123_ModelR_test_probabilities.parquet.bin",
+      "sha256_file_bytes": "ad0bcd54ae98b9d0e1e6c7c87920c0be972e5a5233b7403df2bf415bd023e516",
+      "file_size_bytes": 1258154,
+      "parquet_magic_verified": true,
+      "parquet_num_rows": 22500,
+      "parquet_created_by": "parquet-cpp-arrow version 23.0.1",
+      "embedded_pandas_version": "2.2.3",
+      "schema_columns": [
+        "row_id",
+        "p_negative",
+        "p_neutral",
+        "p_positive",
+        "pred_class_id",
+        "max_confidence",
+        "entropy_nats"
+      ],
+      "drive_file_id": "1a-v_vRs0z3lQExT1XpMazoQdFlAaee-1",
+      "original_drive_path": "/content/drive/MyDrive/IGAR_Paper1/phase3/rq4_final/test_inference/predictions/seed_123_ModelR_test_probabilities.parquet",
+      "verification_note": "Hash computed from live-Drive-downloaded bytes staged in /mnt/data on 2026-09-17. Path remains null when original Drive path was not independently captured."
+    },
+    {
+      "role": "Model-R seed 2026 test probabilities",
+      "staging_filename": "seed_2026_ModelR_test_probabilities.parquet",
+      "staging_download_filename": "seed_2026_ModelR_test_probabilities.parquet.bin",
+      "sha256_file_bytes": "99038f6aa783ba8296a5dbaa6d04b697494ef0de83198d61d55c8831bbacdf13",
+      "file_size_bytes": 1258781,
+      "parquet_magic_verified": true,
+      "parquet_num_rows": 22500,
+      "parquet_created_by": "parquet-cpp-arrow version 23.0.1",
+      "embedded_pandas_version": "2.2.3",
+      "schema_columns": [
+        "row_id",
+        "p_negative",
+        "p_neutral",
+        "p_positive",
+        "pred_class_id",
+        "max_confidence",
+        "entropy_nats"
+      ],
+      "drive_file_id": "1Ja7SAfVAQh32UjhRe38lxQ95nDhEsIRO",
+      "original_drive_path": "/content/drive/MyDrive/IGAR_Paper1/phase3/rq4_final/test_inference/predictions/seed_2026_ModelR_test_probabilities.parquet",
+      "verification_note": "Hash computed from live-Drive-downloaded bytes staged in /mnt/data on 2026-09-17. Path remains null when original Drive path was not independently captured."
+    },
+    {
+      "role": "Model-V seed 42 test probabilities",
+      "staging_filename": "seed_42_ModelV_test_probabilities.parquet",
+      "staging_download_filename": "seed_42_ModelV_test_probabilities.parquet.bin",
+      "sha256_file_bytes": "c2dee6e2e7922245050f29e21b73b1e117aeabaf4486582e4bf59c988348de30",
+      "file_size_bytes": 1258230,
+      "parquet_magic_verified": true,
+      "parquet_num_rows": 22500,
+      "parquet_created_by": "parquet-cpp-arrow version 23.0.1",
+      "embedded_pandas_version": "2.2.3",
+      "schema_columns": [
+        "row_id",
+        "p_negative",
+        "p_neutral",
+        "p_positive",
+        "pred_class_id",
+        "max_confidence",
+        "entropy_nats"
+      ],
+      "drive_file_id": "1mgq-Pzvy0MMBdmViCx4es7uZp7mUgvpe",
+      "original_drive_path": "/content/drive/MyDrive/IGAR_Paper1/phase3/rq4_final/test_inference/predictions/seed_42_ModelV_test_probabilities.parquet",
+      "verification_note": "Hash computed from live-Drive-downloaded bytes staged in /mnt/data on 2026-09-17. Path remains null when original Drive path was not independently captured."
+    },
+    {
+      "role": "Model-V seed 123 test probabilities",
+      "staging_filename": "seed_123_ModelV_test_probabilities.parquet",
+      "staging_download_filename": "seed_123_ModelV_test_probabilities.parquet.bin",
+      "sha256_file_bytes": "9531e182acee1e0751066c9ea33747f2d4203c03d11935f4a5ba87047141f604",
+      "file_size_bytes": 1258033,
+      "parquet_magic_verified": true,
+      "parquet_num_rows": 22500,
+      "parquet_created_by": "parquet-cpp-arrow version 23.0.1",
+      "embedded_pandas_version": "2.2.3",
+      "schema_columns": [
+        "row_id",
+        "p_negative",
+        "p_neutral",
+        "p_positive",
+        "pred_class_id",
+        "max_confidence",
+        "entropy_nats"
+      ],
+      "drive_file_id": "1a6YgeNXsqqbSUEmC1fDiuiqlUuhxg3zG",
+      "original_drive_path": "/content/drive/MyDrive/IGAR_Paper1/phase3/rq4_final/test_inference/predictions/seed_123_ModelV_test_probabilities.parquet",
+      "verification_note": "Hash computed from live-Drive-downloaded bytes staged in /mnt/data on 2026-09-17. Path remains null when original Drive path was not independently captured."
+    },
+    {
+      "role": "Model-V seed 2026 test probabilities",
+      "staging_filename": "seed_2026_ModelV_test_probabilities.parquet",
+      "staging_download_filename": "seed_2026_ModelV_test_probabilities.parquet.bin",
+      "sha256_file_bytes": "b5fd8eafe3933155f5661df24724c5887652da75127067ddd39333070825e64d",
+      "file_size_bytes": 1257662,
+      "parquet_magic_verified": true,
+      "parquet_num_rows": 22500,
+      "parquet_created_by": "parquet-cpp-arrow version 23.0.1",
+      "embedded_pandas_version": "2.2.3",
+      "schema_columns": [
+        "row_id",
+        "p_negative",
+        "p_neutral",
+        "p_positive",
+        "pred_class_id",
+        "max_confidence",
+        "entropy_nats"
+      ],
+      "drive_file_id": "1C-SUpy8FDANk37WYApOmA3Wgg7Dt3z57",
+      "original_drive_path": "/content/drive/MyDrive/IGAR_Paper1/phase3/rq4_final/test_inference/predictions/seed_2026_ModelV_test_probabilities.parquet",
+      "verification_note": "Hash computed from live-Drive-downloaded bytes staged in /mnt/data on 2026-09-17. Path remains null when original Drive path was not independently captured."
+    },
+    {
+      "role": "Frozen RQ4 cohort",
+      "staging_filename": "IGAR_RQ4_Final_Cohort_150k.parquet",
+      "staging_download_filename": "IGAR_RQ4_Final_Cohort_150k.parquet.bin",
+      "sha256_file_bytes": "ba13d30077a39e5aaacd6058c07454e31b0d938ebc949ce09edea7bc5a235912",
+      "file_size_bytes": 14506855,
+      "parquet_magic_verified": true,
+      "parquet_num_rows": 150000,
+      "parquet_created_by": "parquet-cpp-arrow version 23.0.1",
+      "embedded_pandas_version": "2.2.3",
+      "schema_columns": [
+        "row_id",
+        "duplicate_group_id",
+        "split",
+        "stratum",
+        "app",
+        "score",
+        "content",
+        "n_words",
+        "token_length",
+        "will_truncate_at_128",
+        "rating_label",
+        "vader_label",
+        "rating_target",
+        "vader_target",
+        "disagreement",
+        "severity"
+      ],
+      "drive_file_id": null,
+      "original_drive_path": null,
+      "verification_note": "Hash computed from live-Drive-downloaded bytes staged in /mnt/data on 2026-09-17. Path remains null when original Drive path was not independently captured."
+    },
+    {
+      "role": "RQ3 primary metadata table",
+      "staging_filename": "05_RQ3_primary_final.parquet",
+      "staging_download_filename": "05_RQ3_primary_final.parquet.bin",
+      "sha256_file_bytes": "00c7fc29c2aa9491e5155f0ae4eae342faeee02013efe562764c9fb1f7ac5ce3",
+      "file_size_bytes": 41911259,
+      "parquet_magic_verified": true,
+      "parquet_num_rows": 617677,
+      "parquet_created_by": "parquet-cpp-arrow version 23.0.1",
+      "embedded_pandas_version": "2.2.3",
+      "schema_columns": [
+        "row_id",
+        "source_row_number",
+        "duplicate_group_id",
+        "duplicate_group_size",
+        "app",
+        "score",
+        "rating_label",
+        "vader_label",
+        "disagreement",
+        "severity",
+        "transition_type",
+        "n_chars",
+        "n_words",
+        "log_words",
+        "year"
+      ],
+      "drive_file_id": null,
+      "original_drive_path": null,
+      "verification_note": "Hash computed from live-Drive-downloaded bytes staged in /mnt/data on 2026-09-17. Path remains null when original Drive path was not independently captured."
+    },
+    {
+      "role": "RQ3 singleton-sensitivity metadata table",
+      "staging_filename": "05_RQ3_singleton_sensitivity.parquet",
+      "staging_download_filename": "05_RQ3_singleton_sensitivity.parquet.bin",
+      "sha256_file_bytes": "84b7d7b8e2e46dac05a70bc5f9cd2e40d66ac5d3c4329bd5bd060f3200663c63",
+      "file_size_bytes": 28426947,
+      "parquet_magic_verified": true,
+      "parquet_num_rows": 383114,
+      "parquet_created_by": "parquet-cpp-arrow version 23.0.1",
+      "embedded_pandas_version": "2.2.3",
+      "schema_columns": [
+        "row_id",
+        "source_row_number",
+        "duplicate_group_id",
+        "duplicate_group_size",
+        "app",
+        "score",
+        "rating_label",
+        "vader_label",
+        "disagreement",
+        "severity",
+        "transition_type",
+        "n_chars",
+        "n_words",
+        "log_words",
+        "year"
+      ],
+      "drive_file_id": null,
+      "original_drive_path": null,
+      "verification_note": "Hash computed from live-Drive-downloaded bytes staged in /mnt/data on 2026-09-17. Path remains null when original Drive path was not independently captured."
+    },
+    {
+      "role": "Original RQ4 paired-JSD table",
+      "staging_filename": "RQ4_Test_Paired_JSD_22_500.parquet",
+      "staging_download_filename": "RQ4_Test_Paired_JSD_22_500.parquet.bin",
+      "sha256_file_bytes": "83f8c5a75b99b0c17a18e9eb5d9a92e5ff9018faa4ac2731f2a68be20c834de3",
+      "file_size_bytes": 1575535,
+      "parquet_magic_verified": true,
+      "parquet_num_rows": 22500,
+      "parquet_created_by": "parquet-cpp-arrow version 23.0.1",
+      "embedded_pandas_version": "2.2.3",
+      "schema_columns": [
+        "row_id",
+        "jsd_seed_42",
+        "jsd_seed_123",
+        "jsd_seed_2026",
+        "mean_seed_jsd",
+        "mean_seed_jsd_normalized"
+      ],
+      "drive_file_id": "1FNn2f4gCS6DfJLJdedzZqj7js0SMMT88",
+      "original_drive_path": null,
+      "verification_note": "Hash computed from live-Drive-downloaded bytes staged in /mnt/data on 2026-09-17. Path remains null when original Drive path was not independently captured."
+    }
+  ],
+  "original_inference_manifests": [
+    {
+      "filename": "seed_123_ModelR_test_inference.json",
+      "sha256_file_bytes": "8b9ef07e56d5e6f98c89d082c350848d5ef532c359d21c12c2a568bc993c3932",
+      "status": "PASS",
+      "protocol_id": "5b7ffaa036af",
+      "seed": 123,
+      "model": "Model-R",
+      "model_sha256": "53da37dcbd5ca2ada3d707890c9d839e93b9133c2d684bbad3bccd8a2e5d4c84",
+      "n_test": 22500,
+      "test_row_order_sha256": "ee4efe4d3f5e620c36f56923e4ab3481a65cdace75fae984b44cab009a508ded",
+      "probability_array_sha256": "95853e41f906e1e2de17e308b59ebf4957f59b4a1eced265356f378a0614075f",
+      "class_order": [
+        "Negative",
+        "Neutral",
+        "Positive"
+      ],
+      "prediction_file": "/content/drive/MyDrive/IGAR_Paper1/phase3/rq4_final/test_inference/predictions/seed_123_ModelR_test_probabilities.parquet",
+      "completed_at": "2026-09-11T13:57:17.670107"
+    },
+    {
+      "filename": "seed_123_ModelV_test_inference.json",
+      "sha256_file_bytes": "257356bb340def3b98f8377619e1d3583c8179a7451dcfeb54ec9f639f2a3a07",
+      "status": "PASS",
+      "protocol_id": "5b7ffaa036af",
+      "seed": 123,
+      "model": "Model-V",
+      "model_sha256": "7be38e2def25d35408024f3156f0c662614657d527d02241882b30c5e2472e88",
+      "n_test": 22500,
+      "test_row_order_sha256": "ee4efe4d3f5e620c36f56923e4ab3481a65cdace75fae984b44cab009a508ded",
+      "probability_array_sha256": "6646d4f9c0fa1022b7f5fe7eef483a79a3e92bdb3e8018d51cdda83c05c40226",
+      "class_order": [
+        "Negative",
+        "Neutral",
+        "Positive"
+      ],
+      "prediction_file": "/content/drive/MyDrive/IGAR_Paper1/phase3/rq4_final/test_inference/predictions/seed_123_ModelV_test_probabilities.parquet",
+      "completed_at": "2026-09-11T13:57:53.011054"
+    },
+    {
+      "filename": "seed_2026_ModelR_test_inference.json",
+      "sha256_file_bytes": "62d24a10f885ef7e772e45b71c518d28c655d56a4a872ba9d19bb4fe4093cd7f",
+      "status": "PASS",
+      "protocol_id": "5b7ffaa036af",
+      "seed": 2026,
+      "model": "Model-R",
+      "model_sha256": "130d4bdc1e77312b4d65fb2719791121f07a00a4fb47602fe307aa2577864754",
+      "n_test": 22500,
+      "test_row_order_sha256": "ee4efe4d3f5e620c36f56923e4ab3481a65cdace75fae984b44cab009a508ded",
+      "probability_array_sha256": "7b5d0ddbc75c08301d4eb4f0a7eae6e4c27190d11515ebcc18676a41f8e22278",
+      "class_order": [
+        "Negative",
+        "Neutral",
+        "Positive"
+      ],
+      "prediction_file": "/content/drive/MyDrive/IGAR_Paper1/phase3/rq4_final/test_inference/predictions/seed_2026_ModelR_test_probabilities.parquet",
+      "completed_at": "2026-09-11T13:58:27.401131"
+    },
+    {
+      "filename": "seed_2026_ModelV_test_inference.json",
+      "sha256_file_bytes": "5979b439d226497402075709d576c89f4e67f67ea298093adcf393cb6278c0b7",
+      "status": "PASS",
+      "protocol_id": "5b7ffaa036af",
+      "seed": 2026,
+      "model": "Model-V",
+      "model_sha256": "92ed977edc8b977e291a8707d2a1aa85781ad68f0746c7c7522b18278855b86c",
+      "n_test": 22500,
+      "test_row_order_sha256": "ee4efe4d3f5e620c36f56923e4ab3481a65cdace75fae984b44cab009a508ded",
+      "probability_array_sha256": "4b550ae12fbddf380a41ac38a5b6e5e918c3ebc19c75e87e1a5dcd94ee38f7c3",
+      "class_order": [
+        "Negative",
+        "Neutral",
+        "Positive"
+      ],
+      "prediction_file": "/content/drive/MyDrive/IGAR_Paper1/phase3/rq4_final/test_inference/predictions/seed_2026_ModelV_test_probabilities.parquet",
+      "completed_at": "2026-09-11T13:59:02.595252"
+    },
+    {
+      "filename": "seed_42_ModelR_test_inference.json",
+      "sha256_file_bytes": "b1956c6e9fae38c9f4739f3d26c1145b670b690dd2adc2350887bca267dd7ac0",
+      "status": "PASS",
+      "protocol_id": "5b7ffaa036af",
+      "seed": 42,
+      "model": "Model-R",
+      "model_sha256": "78daac294df3438bba72a1eeb35024c543ffc9e7aa78a643f144c431bf823c99",
+      "n_test": 22500,
+      "test_row_order_sha256": "ee4efe4d3f5e620c36f56923e4ab3481a65cdace75fae984b44cab009a508ded",
+      "probability_array_sha256": "7c16acbf2547f09ec2c1d58406b541254e94375e63269126f75edb0fab7f7a05",
+      "class_order": [
+        "Negative",
+        "Neutral",
+        "Positive"
+      ],
+      "prediction_file": "/content/drive/MyDrive/IGAR_Paper1/phase3/rq4_final/test_inference/predictions/seed_42_ModelR_test_probabilities.parquet",
+      "completed_at": "2026-09-11T13:56:07.578754"
+    },
+    {
+      "filename": "seed_42_ModelV_test_inference.json",
+      "sha256_file_bytes": "2f6af0ad875b2b495eb63e083f37790793f39636c8ccb7c48bd7943aee579769",
+      "status": "PASS",
+      "protocol_id": "5b7ffaa036af",
+      "seed": 42,
+      "model": "Model-V",
+      "model_sha256": "5472a992eb75acc5eaede24254c601679151d3eb4b9a1423fc67c80a1c5c3a90",
+      "n_test": 22500,
+      "test_row_order_sha256": "ee4efe4d3f5e620c36f56923e4ab3481a65cdace75fae984b44cab009a508ded",
+      "probability_array_sha256": "537ee8517e58f9e07891440c7545fc7c983c87354311c9457855b922d53237a5",
+      "class_order": [
+        "Negative",
+        "Neutral",
+        "Positive"
+      ],
+      "prediction_file": "/content/drive/MyDrive/IGAR_Paper1/phase3/rq4_final/test_inference/predictions/seed_42_ModelV_test_probabilities.parquet",
+      "completed_at": "2026-09-11T13:56:43.310535"
+    }
+  ],
+  "shared_invariants": {
+    "all_inference_manifests_status_PASS": true,
+    "protocol_ids": [
+      "5b7ffaa036af"
+    ],
+    "n_test_values": [
+      22500
+    ],
+    "test_row_order_sha256_values": [
+      "ee4efe4d3f5e620c36f56923e4ab3481a65cdace75fae984b44cab009a508ded"
+    ],
+    "class_orders": [
+      [
+        "Negative",
+        "Neutral",
+        "Positive"
+      ]
+    ]
+  },
+  "reference_environment": {
+    "runtime_info_sha256": "d8667376008609b7cabfc98cbccfcc90ea71d64846df8a709013f463c6fdc767",
+    "pip_freeze_sha256": "855ad8dea8f742c42f146cb8fa928ed6fbd3f1cb2dc70de8ff0dcfd7a250ffc7",
+    "classification": "REFERENCE ORIGINAL/PRIMARY RUNTIME; not asserted to be the exact P1R-11 revision-stage runtime",
+    "python": "3.13.15",
+    "torch": "2.11.0+cu128",
+    "transformers": "5.16.1",
+    "accelerate": "1.14.0",
+    "tokenizers": "0.23.1",
+    "safetensors": "0.8.0",
+    "sentencepiece": "0.2.2",
+    "numpy": "2.1.3",
+    "pandas": "2.2.3",
+    "scikit_learn": "1.6.1",
+    "statsmodels": "0.15.0",
+    "pyarrow": "23.0.1",
+    "gpu": "Tesla T4"
+  }
+}

@@ -1,0 +1,319 @@
+{
+  "schema_version": "1.0",
+  "record_type": "RECOVERED_HISTORICAL_EXECUTION_EVIDENCE",
+  "workflow": "P1R-11",
+  "manuscript_id": "IPM-D-26-07123",
+  "recovery_date": "2026-09-17",
+  "important_distinction": "These records document that P1R-11 analyses A-G were previously executed and reported from the preserved probability matrices/metadata without retraining. They are historical execution evidence. They are not relabeled as the original raw machine-output bundle or exact original analysis script bytes.",
+  "gate_lock": {
+    "locked_before_11B": true,
+    "locked_at_local": "2026-09-17T02:33:35+07:00",
+    "rules": {
+      "polarity_only_beta": {
+        "GREEN": ">=0.25",
+        "AMBER": "0.15 to <0.25",
+        "RED": "<0.15 or CI includes 0"
+      },
+      "singleton_beta": {
+        "GREEN": ">=0.25",
+        "AMBER": "0.15 to <0.25",
+        "RED": "<0.15 or CI includes 0"
+      },
+      "cross_over_within_D1": {
+        "GREEN": ">=3",
+        "AMBER": "1.5 to <3",
+        "RED": "<1.5"
+      },
+      "shared_label_accuracy_gap_V_minus_R_pp": {
+        "GREEN": "<=2 pp (literal signed rule)",
+        "AMBER": ">2 to 5 pp",
+        "RED": ">5 pp"
+      },
+      "entropy_R_over_V_polarity_agreement": {
+        "GREEN": "<=1.3",
+        "AMBER": ">1.3 to 2.0",
+        "RED": ">2.0"
+      }
+    },
+    "aggregation": "5 GREEN => GREEN; at least one AMBER and no RED => AMBER; at least one RED => RED"
+  },
+  "stages": {
+    "11A": {
+      "status": "PASS",
+      "execution_order": 1,
+      "source_record": "user-provided recovered P1R-11A report in current conversation",
+      "no_retraining": true,
+      "frozen_cohort_sha256": "ba13d30077a39e5aaacd6058c07454e31b0d938ebc949ce09edea7bc5a235912",
+      "test_row_order_sha256": "ee4efe4d3f5e620c36f56923e4ab3481a65cdace75fae984b44cab009a508ded",
+      "n_test": 22500,
+      "agreement_n": 13196,
+      "disagreement_n": 9304,
+      "duplicate_text_clusters_test": 15921,
+      "singleton_clusters_test": 15286,
+      "max_cluster_size_test": 1106,
+      "mean_jsd_agreement": 0.05190023,
+      "mean_jsd_disagreement": 0.40646891,
+      "beta": 0.35456868,
+      "cluster_robust_se": 0.00610784,
+      "ci95": [
+        0.34259663,
+        0.36654073
+      ],
+      "t": 58.05144,
+      "s0_mean_jsd": 0.0519,
+      "s1_mean_jsd": 0.440888,
+      "s2_mean_jsd": 0.319494,
+      "directional_transitions": {
+        "Positive_to_Neutral": {
+          "n": 2743,
+          "mean_jsd": 0.518354
+        },
+        "Negative_to_Neutral": {
+          "n": 3119,
+          "mean_jsd": 0.446303
+        },
+        "Neutral_to_Positive": {
+          "n": 543,
+          "mean_jsd": 0.172044
+        },
+        "Neutral_to_Negative": {
+          "n": 261,
+          "mean_jsd": 0.121376
+        },
+        "Negative_to_Positive": {
+          "n": 2206,
+          "mean_jsd": 0.323178
+        },
+        "Positive_to_Negative": {
+          "n": 432,
+          "mean_jsd": 0.300678
+        }
+      }
+    },
+    "11B": {
+      "status": "GREEN",
+      "execution_order": 2,
+      "source_project_file_id": "file_000000006a44820baa87f875d31f0764",
+      "no_retraining": true,
+      "statement": "Computed directly from six preserved probability matrices; cohort unchanged.",
+      "pairs": {
+        "R42_R123": {
+          "all": 0.00260497,
+          "D0": 0.00165405,
+          "D1": 0.00395367
+        },
+        "R42_R2026": {
+          "all": 0.00258134,
+          "D0": 0.00157908,
+          "D1": 0.00400286
+        },
+        "R123_R2026": {
+          "all": 0.00262523,
+          "D0": 0.00168978,
+          "D1": 0.003952
+        },
+        "V42_V123": {
+          "all": 0.00415405,
+          "D0": 0.0030118,
+          "D1": 0.00577412
+        },
+        "V42_V2026": {
+          "all": 0.00451931,
+          "D0": 0.00316309,
+          "D1": 0.00644284
+        },
+        "V123_V2026": {
+          "all": 0.00433091,
+          "D0": 0.00317328,
+          "D1": 0.00597278
+        }
+      },
+      "within_R": {
+        "D0": 0.00164097,
+        "D1": 0.00396951
+      },
+      "within_V": {
+        "D0": 0.00311606,
+        "D1": 0.00606325
+      },
+      "combined_within": {
+        "D0": 0.00237851,
+        "D1": 0.00501638
+      },
+      "cross_source": {
+        "D0": 0.05190023,
+        "D1": 0.40646891
+      },
+      "cross_over_combined_within_D1": 81.03,
+      "cross_over_within_R_D1": 102.4,
+      "cross_over_within_V_D1": 67.04,
+      "worst_pair_cross_ratio_D1": 63.09
+    },
+    "11D": {
+      "status": "GREEN",
+      "execution_order": 3,
+      "source_project_file_id": "file_00000000601c82309c80e986d6ac2030",
+      "no_retraining": true,
+      "evaluation_stage_restriction_only": true,
+      "n": 15385,
+      "D0_n": 12747,
+      "D1_n": 2638,
+      "mean_jsd_D0": 0.04069165,
+      "median_jsd_D0": 0.0091624,
+      "mean_jsd_D1": 0.31949378,
+      "median_jsd_D1": 0.33157274,
+      "beta": 0.27880213,
+      "cluster_robust_se": 0.00906101,
+      "ci95": [
+        0.26104287,
+        0.29656139
+      ],
+      "retained_percent": 78.63,
+      "attenuation_percent": 21.37
+    },
+    "11E": {
+      "status": "AMBER",
+      "execution_order": 4,
+      "source_project_file_id": "file_00000000cbac81faa5a3f1bf23a1bc3a",
+      "no_retraining": true,
+      "overall": {
+        "Model_R_accuracy": 0.885437,
+        "Model_R_macro_f1": 0.640817,
+        "Model_V_accuracy": 0.905215,
+        "Model_V_macro_f1": 0.890355
+      },
+      "class_summary": {
+        "Model_R_Negative_f1": 0.891042,
+        "Model_R_Neutral_f1": 0.106882,
+        "Model_R_Neutral_recall": 0.058792,
+        "Model_R_Positive_f1": 0.924527,
+        "Model_V_Negative_f1": 0.841511,
+        "Model_V_Neutral_f1": 0.894053,
+        "Model_V_Positive_f1": 0.935502
+      },
+      "polarity_agreement_entropy": {
+        "Model_R": 0.225884,
+        "Model_V": 0.153464,
+        "ratio_R_over_V": 1.4719
+      },
+      "shared_label_three_class": {
+        "Model_R_accuracy": 0.97521,
+        "Model_V_accuracy": 0.950707,
+        "V_minus_R_pp": -2.4503,
+        "Model_R_macro_f1": 0.970805,
+        "Model_V_macro_f1": 0.952682
+      },
+      "gate_statuses": {
+        "shared_label_signed_gap": "GREEN",
+        "entropy_ratio": "AMBER"
+      }
+    },
+    "11F": {
+      "status": "COMPLETE_STRONGLY_SUPPORTIVE",
+      "execution_order": 5,
+      "source_project_file_id": "file_0000000011a481f5b49346bf8941c381",
+      "no_retraining": true,
+      "polarity_only_D1_within_combined_approx": 0.00643,
+      "polarity_only_D1_cross_source": 0.31949378,
+      "cross_over_within_D1": 49.73,
+      "shared_label_polarity_restricted_accuracy": {
+        "Model_R": 0.975968,
+        "Model_V": 0.971183,
+        "V_minus_R_pp": -0.4785
+      },
+      "two_class_renormalized_entropy": {
+        "Model_R": 0.104734,
+        "Model_V": 0.078143,
+        "ratio_R_over_V": 1.3403
+      },
+      "note": "Secondary diagnostics do not replace the pre-locked gate metrics."
+    },
+    "11C": {
+      "status": "GREEN",
+      "execution_order": 6,
+      "source_project_file_id": "file_00000000582481f5a483af706c0a76e3",
+      "no_retraining": true,
+      "full_source_singleton_n": 14551,
+      "D0_n": 7558,
+      "D1_n": 6993,
+      "mean_jsd_D0": 0.07218723,
+      "median_jsd_D0": 0.01098347,
+      "mean_jsd_D1": 0.37065725,
+      "median_jsd_D1": 0.41974532,
+      "beta": 0.29847002,
+      "cluster_robust_se": 0.00287159,
+      "ci95": [
+        0.29284181,
+        0.30409823
+      ],
+      "retained_percent": 84.18,
+      "attenuation_percent": 15.82,
+      "cross_over_within_D1": 59.6,
+      "joint_singleton_polarity": {
+        "n": 9561,
+        "D0_n": 7195,
+        "D1_n": 2366,
+        "mean_D0": 0.05881056,
+        "mean_D1": 0.31410927,
+        "beta": 0.25529871,
+        "ci95": [
+          0.24672281,
+          0.26387461
+        ]
+      }
+    },
+    "Decision_Gate": {
+      "status": "AMBER_FINAL",
+      "execution_order": 7,
+      "source_project_file_id": "file_000000006ab481f88545c72d69e58af1",
+      "criteria": [
+        {
+          "criterion": "beta_polarity_only",
+          "value": 0.278802,
+          "status": "GREEN"
+        },
+        {
+          "criterion": "beta_singleton",
+          "value": 0.29847,
+          "status": "GREEN"
+        },
+        {
+          "criterion": "cross_over_within_D1",
+          "value": 81.03,
+          "status": "GREEN"
+        },
+        {
+          "criterion": "shared_label_V_minus_R_pp_signed",
+          "value": -2.45,
+          "status": "GREEN"
+        },
+        {
+          "criterion": "entropy_R_over_V",
+          "value": 1.4719,
+          "status": "AMBER"
+        }
+      ],
+      "aggregate": "4 GREEN + 1 AMBER + 0 RED => AMBER"
+    },
+    "11G": {
+      "status": "COMPLETE",
+      "execution_order": 8,
+      "source_project_file_id": "file_000000009ba8820bba967b474c62bf05",
+      "no_retraining": true,
+      "s1_n": 6666,
+      "polarity_to_vader_neutral_n": 5862,
+      "polarity_to_vader_neutral_percent": 87.94,
+      "polarity_to_vader_neutral_weighted_mean_jsd": 0.48,
+      "rating_neutral_to_polarity_weighted_mean_jsd": 0.1556,
+      "weighted_jsd_mass_toward_vader_neutral_percent": 95.7,
+      "neutral_neutral": {
+        "n": 449,
+        "mean_jsd": 0.370109,
+        "median_jsd": 0.394038,
+        "sd": 0.178872,
+        "iqr": 0.224345
+      },
+      "interpretive_decision": "Downgrade non-monotonicity as headline; reframe as directional/class composition; scalar distance alone is insufficient."
+    }
+  }
+}

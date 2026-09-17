@@ -1,0 +1,58 @@
+{
+  "audit_date": "2026-09-17",
+  "audit_scope": "11K final numerical/document/reference/provenance cross-check",
+  "final_submission_artifacts": {
+    "manuscript": {
+      "filename": "IPM-D-26-07123_Manuscript_Anonymized_P1R11_REVISED_v2.docx",
+      "sha256": "bd2abc14d7b4e0adcd3fc3bff445ab3618a8816f7c5f900da8f687d96f8acdcc",
+      "size_bytes": 2009301
+    },
+    "supplement": {
+      "filename": "IPM-D-26-07123_Supplementary_Material_P1R11_REVISED_v2.pdf",
+      "sha256": "9cce1c8f8fefda933cf2790be407c77bf7c40eb3af317f036a5595721f87247c",
+      "size_bytes": 46085
+    },
+    "response_to_editor": {
+      "filename": "IPM-D-26-07123_Response_to_the_Editor_P1R11_REVISED.docx",
+      "sha256": "ddf2d641ae29109f60aa9f6790a39079826d3fb5291014cc54b42dcf020c54b2",
+      "size_bytes": 44734
+    },
+    "cover_letter": {
+      "filename": "IPM-D-26-07123_Cover_Letter_P1R11_REVISED.docx",
+      "sha256": "e0dbf0f1ffb329e1abd8536b87e434b0f3e0a93b512af4b4e7586fbec8d6a54a",
+      "size_bytes": 25159
+    }
+  },
+  "supplement_vs_P1R11_REPRODUCED_RESULTS": {
+    "values_compared": 103,
+    "mismatches": 0,
+    "status": "PASS"
+  },
+  "canonical_numeric_cross_document_check": {
+    "canonical_values_compared": 30,
+    "documents_compared": 4,
+    "mismatches": 0,
+    "rounding": "All observed differences were reporting precision only; all rounding was correct.",
+    "status": "PASS"
+  },
+  "s11_sha_prefix_check": {
+    "prefixes_compared": 7,
+    "mismatches": 0,
+    "includes": "six probability-array SHA-256 prefixes plus canonical test-row-order prefix",
+    "status": "PASS"
+  },
+  "manuscript_specific_checks": {
+    "cormier_author_order": "PASS",
+    "limitations_consolidated_to_eight": "PASS",
+    "binary_retraining_limitation_present": "PASS",
+    "section_4_3_cross_reference": "PASS"
+  },
+  "response_and_cover_checks": {
+    "integrity_statement_matches_section_2_15": "PASS",
+    "old_no_new_tests_language_absent": "PASS",
+    "post_hoc_section_separate_and_author_initiated": "PASS",
+    "gate_language_absent": "PASS",
+    "masters_award_absent_from_cover_letter": "PASS"
+  },
+  "audit_origin": "Completed manual 11K cross-check in the active manuscript revision workflow, followed by cryptographic locking of the audited final files."
+}

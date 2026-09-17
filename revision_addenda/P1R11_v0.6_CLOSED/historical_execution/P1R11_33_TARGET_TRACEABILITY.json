@@ -1,0 +1,214 @@
+{
+  "schema_version": "1.0",
+  "target_count": 33,
+  "all_33_targets_traceable": true,
+  "rows": [
+    {
+      "target": "within_source_ratio_full_disagreement",
+      "canonical_value": 81.03,
+      "historical_stage": "11B",
+      "trace_status": "RECOVERED_IN_HISTORICAL_EXECUTION_RECORD"
+    },
+    {
+      "target": "within_source_ratio_polarity_only_disagreement",
+      "canonical_value": 49.73,
+      "historical_stage": "11F",
+      "trace_status": "RECOVERED_IN_HISTORICAL_EXECUTION_RECORD"
+    },
+    {
+      "target": "within_source_ratio_singleton_disagreement",
+      "canonical_value": 59.6,
+      "historical_stage": "11C",
+      "trace_status": "RECOVERED_IN_HISTORICAL_EXECUTION_RECORD"
+    },
+    {
+      "target": "polarity_only_n",
+      "canonical_value": 15385,
+      "historical_stage": "11D",
+      "trace_status": "RECOVERED_IN_HISTORICAL_EXECUTION_RECORD"
+    },
+    {
+      "target": "polarity_only_beta",
+      "canonical_value": 0.2788,
+      "historical_stage": "11D",
+      "trace_status": "RECOVERED_IN_HISTORICAL_EXECUTION_RECORD"
+    },
+    {
+      "target": "polarity_only_ci95",
+      "canonical_value": [
+        0.261,
+        0.2966
+      ],
+      "historical_stage": "11D",
+      "trace_status": "RECOVERED_IN_HISTORICAL_EXECUTION_RECORD"
+    },
+    {
+      "target": "polarity_only_retained_percent",
+      "canonical_value": 78.6,
+      "historical_stage": "11D",
+      "trace_status": "RECOVERED_IN_HISTORICAL_EXECUTION_RECORD"
+    },
+    {
+      "target": "singleton_n",
+      "canonical_value": 14551,
+      "historical_stage": "11C",
+      "trace_status": "RECOVERED_IN_HISTORICAL_EXECUTION_RECORD"
+    },
+    {
+      "target": "singleton_beta",
+      "canonical_value": 0.2985,
+      "historical_stage": "11C",
+      "trace_status": "RECOVERED_IN_HISTORICAL_EXECUTION_RECORD"
+    },
+    {
+      "target": "singleton_ci95",
+      "canonical_value": [
+        0.2928,
+        0.3041
+      ],
+      "historical_stage": "11C",
+      "trace_status": "RECOVERED_IN_HISTORICAL_EXECUTION_RECORD"
+    },
+    {
+      "target": "singleton_retained_percent",
+      "canonical_value": 84.2,
+      "historical_stage": "11C",
+      "trace_status": "RECOVERED_IN_HISTORICAL_EXECUTION_RECORD"
+    },
+    {
+      "target": "joint_n",
+      "canonical_value": 9561,
+      "historical_stage": "11C",
+      "trace_status": "RECOVERED_IN_HISTORICAL_EXECUTION_RECORD"
+    },
+    {
+      "target": "joint_beta",
+      "canonical_value": 0.2553,
+      "historical_stage": "11C",
+      "trace_status": "RECOVERED_IN_HISTORICAL_EXECUTION_RECORD"
+    },
+    {
+      "target": "joint_ci95",
+      "canonical_value": [
+        0.2467,
+        0.2639
+      ],
+      "historical_stage": "11C",
+      "trace_status": "RECOVERED_IN_HISTORICAL_EXECUTION_RECORD"
+    },
+    {
+      "target": "joint_retained_percent",
+      "canonical_value": 72.0,
+      "historical_stage": "11C",
+      "trace_status": "RECOVERED_IN_HISTORICAL_EXECUTION_RECORD"
+    },
+    {
+      "target": "model_r_neutral_f1",
+      "canonical_value": 0.1069,
+      "historical_stage": "11E",
+      "trace_status": "RECOVERED_IN_HISTORICAL_EXECUTION_RECORD"
+    },
+    {
+      "target": "shared_label_three_class_accuracy_difference_v_minus_r_pp",
+      "canonical_value": -2.45,
+      "historical_stage": "11E",
+      "trace_status": "RECOVERED_IN_HISTORICAL_EXECUTION_RECORD"
+    },
+    {
+      "target": "shared_label_binary_accuracy_model_r_percent",
+      "canonical_value": 97.6,
+      "historical_stage": "11F",
+      "trace_status": "RECOVERED_IN_HISTORICAL_EXECUTION_RECORD"
+    },
+    {
+      "target": "shared_label_binary_accuracy_model_v_percent",
+      "canonical_value": 97.12,
+      "historical_stage": "11F",
+      "trace_status": "RECOVERED_IN_HISTORICAL_EXECUTION_RECORD"
+    },
+    {
+      "target": "shared_label_binary_accuracy_difference_v_minus_r_pp",
+      "canonical_value": -0.48,
+      "historical_stage": "11F",
+      "trace_status": "RECOVERED_IN_HISTORICAL_EXECUTION_RECORD"
+    },
+    {
+      "target": "polarity_agreement_entropy_ratio_three_class_r_over_v",
+      "canonical_value": 1.4719,
+      "historical_stage": "11E",
+      "trace_status": "RECOVERED_IN_HISTORICAL_EXECUTION_RECORD"
+    },
+    {
+      "target": "polarity_agreement_entropy_ratio_binary_renormalized_r_over_v",
+      "canonical_value": 1.3403,
+      "historical_stage": "11F",
+      "trace_status": "RECOVERED_IN_HISTORICAL_EXECUTION_RECORD"
+    },
+    {
+      "target": "s1_n",
+      "canonical_value": 6666,
+      "historical_stage": "11G",
+      "trace_status": "RECOVERED_IN_HISTORICAL_EXECUTION_RECORD"
+    },
+    {
+      "target": "s1_polarity_to_vader_neutral_n",
+      "canonical_value": 5862,
+      "historical_stage": "11G",
+      "trace_status": "RECOVERED_IN_HISTORICAL_EXECUTION_RECORD"
+    },
+    {
+      "target": "s1_polarity_to_vader_neutral_percent",
+      "canonical_value": 87.94,
+      "historical_stage": "11G",
+      "trace_status": "RECOVERED_IN_HISTORICAL_EXECUTION_RECORD"
+    },
+    {
+      "target": "s1_polarity_to_vader_neutral_weighted_mean_jsd",
+      "canonical_value": 0.48,
+      "historical_stage": "11G",
+      "trace_status": "RECOVERED_IN_HISTORICAL_EXECUTION_RECORD"
+    },
+    {
+      "target": "s1_rating_neutral_to_polarity_weighted_mean_jsd",
+      "canonical_value": 0.1556,
+      "historical_stage": "11G",
+      "trace_status": "RECOVERED_IN_HISTORICAL_EXECUTION_RECORD"
+    },
+    {
+      "target": "s1_weighted_jsd_mass_toward_vader_neutral_percent",
+      "canonical_value": 95.7,
+      "historical_stage": "11G",
+      "trace_status": "RECOVERED_IN_HISTORICAL_EXECUTION_RECORD"
+    },
+    {
+      "target": "neutral_neutral_n",
+      "canonical_value": 449,
+      "historical_stage": "11G",
+      "trace_status": "RECOVERED_IN_HISTORICAL_EXECUTION_RECORD"
+    },
+    {
+      "target": "neutral_neutral_mean_jsd",
+      "canonical_value": 0.37,
+      "historical_stage": "11G",
+      "trace_status": "RECOVERED_IN_HISTORICAL_EXECUTION_RECORD"
+    },
+    {
+      "target": "neutral_neutral_median_jsd",
+      "canonical_value": 0.394,
+      "historical_stage": "11G",
+      "trace_status": "RECOVERED_IN_HISTORICAL_EXECUTION_RECORD"
+    },
+    {
+      "target": "largest_cluster_exclusion_max_beta_change_percent",
+      "canonical_value": 2.06,
+      "historical_stage": "pre-P1R11 frozen sensitivity + 11C interpretation",
+      "trace_status": "RECOVERED_IN_HISTORICAL_EXECUTION_RECORD"
+    },
+    {
+      "target": "all_repeated_text_exclusion_beta_attenuation_percent",
+      "canonical_value": 15.82,
+      "historical_stage": "11C",
+      "trace_status": "RECOVERED_IN_HISTORICAL_EXECUTION_RECORD"
+    }
+  ]
+}
