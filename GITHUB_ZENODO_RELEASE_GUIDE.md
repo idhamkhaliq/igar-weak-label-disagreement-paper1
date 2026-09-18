@@ -1,3 +1,5 @@
+> **Historical/completed v1.0.0 workflow record.** The steps below document preparation of the original frozen release and are not current publication instructions for the final resubmission.
+
 # GitHub + Zenodo publication checklist
 
 ## GitHub
@@ -20,7 +22,7 @@
 6. Add the DOI to the manuscript Code availability statement and cover letter.
 7. Optionally update the GitHub README with the DOI badge after Zenodo has minted it.
 
-## Final manuscript wording
+## Historical manuscript wording
 
 Code availability:
 

@@ -1,9 +1,17 @@
 {
-  "schema_version": "2.0",
+  "schema_version": "2.1",
   "repository": "idhamkhaliq/igar-weak-label-disagreement-paper1",
   "repository_version": "1.1.0",
-  "release_status": "STAGED_FOR_GITHUB_RELEASE",
+  "release_status": "PUBLISHED",
+  "publication_role": "reproducibility_release_for_final_manuscript_resubmission",
   "release_model": "two_layer_provenance",
+  "narrative_alignment": {
+    "status": "ALIGNED_TO_FINAL_RESUBMISSION",
+    "aligned_on": "2026-09-19",
+    "scope": "Public-facing repository narrative and metadata only; frozen computational artifacts, machine outputs, source tables, and cryptographic identities are unchanged.",
+    "preferred_terminology": "post hoc sensitivity and diagnostic analyses",
+    "historical_internal_identifier_note": "P1R-11 is retained only where required to identify historical workflow paths, filenames, and manifests."
+  },
   "original_release": {
     "tag": "v1.0.0",
     "commit": "795a5e187e5aef15f856d02ca01ce42e1e68e319",
@@ -12,10 +20,11 @@
     "canonical_strict_zip_sha256": "ae8eb3d4400e32ae52a7b6526420bd8421f36af1f5d27a576cb56119e7c96d89",
     "scientific_source_component_set_sha256": "bc5ec1a72c7168be6deba93036cb444748611f3a6e3735d47ffb9f479c779530",
     "canonical_checksum_manifest_sha256": "c1a594f0a9138e458345581dd5087977ce903e50bf28016161940ac57b6dfef2",
-    "immutable_policy": "Do not rewrite or retag v1.0.0 as if P1R-11 were part of the original analysis execution."
+    "immutable_policy": "Do not rewrite or retag v1.0.0 as if the later post hoc analyses were part of the original analysis execution."
   },
   "revision_stage_addendum": {
-    "workflow": "P1R-11",
+    "public_label": "post_hoc_reproducibility_addendum",
+    "historical_internal_workflow": "P1R-11",
     "internal_version": "0.6-closed",
     "repository_release_tag": "v1.1.0",
     "status": "CLOSED",
@@ -35,8 +44,15 @@
     "additional_weak_supervision_source": false,
     "new_data_collection": false,
     "split_change": false,
-    "revision_stage_post_hoc_sensitivity_analyses_added": true
+    "post_hoc_sensitivity_and_diagnostic_analyses_added": true
   },
+  "interpretation_boundary": {
+    "either_weak_supervision_source_is_ground_truth": false,
+    "causal_source_identity_claim": false,
+    "source_correctness_ranking_claim": false,
+    "singleton_scope": "full usable-text source corpus"
+  },
+  "manifest_scope_note": "MANIFEST_PUBLIC_RELEASE_v1.1.0.sha256 identifies the tagged v1.1.0 release snapshot. Narrative-only alignment commits on main after the release do not rewrite that historical manifest or the frozen computational record.",
   "data": {
     "raw_igar_dataset_redistributed": false,
     "mendeley_data_doi": "10.17632/7zryc6k76z.3",
@@ -45,6 +61,6 @@
   "zenodo": {
     "existing_archived_release_doi": "10.5281/zenodo.22731209",
     "v1_1_0_version_doi": null,
-    "note": "Populate the v1.1.0 version-specific DOI only after Zenodo ingests the GitHub v1.1.0 release. Do not guess it in advance."
+    "note": "Populate a version-specific DOI only if separately verified; do not guess it."
   }
 }

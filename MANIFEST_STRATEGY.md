@@ -1,19 +1,16 @@
+> **Historical/completed manifest-generation record for tagged release v1.1.0.** The v1.1.0 manifests identify the immutable tagged release snapshot. Narrative-only alignment commits on `main` after publication do not rewrite those historical manifests and must not be interpreted as changes to the frozen computational record.
+
 # Manifest strategy for repository v1.1.0
 
-The repository's current `MANIFEST_PUBLIC_RELEASE.sha256` belongs to the historical v1.0.0 state. Updating root metadata for v1.1.0 changes several hashes, so the old manifest must be preserved rather than silently overwritten.
+The original v1.0.0 root manifest was preserved before the v1.1.0 overlay was applied. A new v1.1.0 manifest was then generated for the tagged release snapshot.
 
-## Required sequence
+## Completed sequence
 
-1. Before applying this overlay, copy the existing root manifest:
-
-   ```bash
-   cp MANIFEST_PUBLIC_RELEASE.sha256 MANIFEST_PUBLIC_RELEASE_v1.0.0.sha256
-   ```
-
-2. Apply the v1.1.0 overlay.
-3. Generate a new full-repository manifest after all files are in place.
-4. Save it as `MANIFEST_PUBLIC_RELEASE_v1.1.0.sha256`.
-5. Copy the same content to the convenience alias `MANIFEST_PUBLIC_RELEASE.sha256`.
+1. The historical v1.0.0 root manifest was copied to `MANIFEST_PUBLIC_RELEASE_v1.0.0.sha256`.
+2. The v1.1.0 overlay was applied.
+3. A full-repository manifest was generated for the v1.1.0 tagged release snapshot.
+4. It was saved as `MANIFEST_PUBLIC_RELEASE_v1.1.0.sha256`.
+5. At release time, the same content was also used as the convenience alias `MANIFEST_PUBLIC_RELEASE.sha256`.
 
 ## Self-reference rule
 
@@ -23,16 +20,17 @@ The v1.1.0 full-repository manifest intentionally excludes:
 - `MANIFEST_PUBLIC_RELEASE.sha256`
 - `MANIFEST_PUBLIC_RELEASE_v1.1.0.sha256`
 
-It **does include** the preserved `MANIFEST_PUBLIC_RELEASE_v1.0.0.sha256`.
+It includes the preserved `MANIFEST_PUBLIC_RELEASE_v1.0.0.sha256`.
 
-This avoids a self-referential checksum cycle while retaining the historical v1.0.0 manifest as an auditable object in v1.1.0.
+## Scope after narrative alignment
 
-## Recommended automation
+The versioned v1.1.0 manifest remains the cryptographic identity record for the **tagged v1.1.0 release snapshot**. It is not a checksum manifest for current `main` after the final-resubmission narrative alignment.
 
-Use:
+The narrative alignment changes only public-facing documentation and metadata. It does not alter:
 
-```bash
-python tools/apply_v1_1_overlay.py --repo /path/to/local/repo --overlay /path/to/IGAR_Paper1_GitHub_v1.1.0_READY
-```
-
-The script preserves the v1.0.0 manifest, applies only the intended files, generates the v1.1.0 repository manifest, and runs the verification script. It does **not** commit, tag, push, or publish a GitHub release.
+- `canonical_archive/`;
+- the original frozen `reproducibility/` layer;
+- the closed post hoc addendum package;
+- machine-readable scientific outputs;
+- source tables; or
+- the cryptographic identities of the immutable scientific archives.
