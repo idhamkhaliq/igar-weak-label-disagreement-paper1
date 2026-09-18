@@ -65,7 +65,7 @@ The final manuscript reports:
 - mean three-seed JSD: **0.0519** for agreement and **0.4065** for disagreement;
 - primary difference: **β = 0.3546**, 95% CI **[0.3426, 0.3665]**;
 - polarity-only sensitivity: **β = 0.2788**;
-- full usable-text source-corpus singleton sensitivity: **β = 0.2985**.
+- full usable-text source corpus singleton sensitivity: **β = 0.2985**.
 
 The full source corpus contains **617,722** reviews and **397,731** normalized duplicate-text groups because the 26 missing-text records retain unique grouping identifiers. The **617,696-review usable-text pool contains 397,705 groups**. Singleton sensitivity is defined from this full usable-text duplicate mapping, not from uniqueness within the RQ4 test set.
 
@@ -88,6 +88,7 @@ Those historical statements must not be interpreted as the terminology or full a
 - `PUBLIC_RELEASE_STATUS.json` — current release-role and provenance record.
 - `MANIFEST_PUBLIC_RELEASE_v1.0.0.sha256` — preserved manifest for the original release.
 - `MANIFEST_PUBLIC_RELEASE_v1.1.0.sha256` — manifest for the tagged v1.1.0 release snapshot.
+- `MANIFEST_MAIN_FINAL_RESUBMISSION.sha256` — checksum manifest for current `main` after final-resubmission narrative alignment.
 
 ## Data
 
@@ -104,7 +105,14 @@ The released dataset-provided translation and VADER variables were analyzed as r
 
 ## Verification
 
-The versioned manifests identify the tagged release snapshots. Because `main` now contains narrative-only alignment updates made after the v1.1.0 tag, do not interpret the tagged v1.1.0 full-repository manifest as a checksum manifest for current `main`.
+The versioned release manifests identify the tagged release snapshots. Because `main` contains narrative-only alignment updates made after the v1.1.0 tag, the tagged v1.1.0 manifest is not a checksum manifest for current `main`.
+
+Verify the current final-resubmission-aligned `main` state with:
+
+```bash
+sha256sum -c MANIFEST_MAIN_FINAL_RESUBMISSION.sha256
+python tools/verify_v1_1_repository.py --repo .
+```
 
 The immutable scientific archives remain independently verifiable:
 

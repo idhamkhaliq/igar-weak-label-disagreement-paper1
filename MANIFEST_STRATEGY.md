@@ -1,32 +1,44 @@
-> **Historical/completed manifest-generation record for tagged release v1.1.0.** The v1.1.0 manifests identify the immutable tagged release snapshot. Narrative-only alignment commits on `main` after publication do not rewrite those historical manifests and must not be interpreted as changes to the frozen computational record.
+> **Historical release manifests remain immutable.** `MANIFEST_PUBLIC_RELEASE_v1.0.0.sha256` and `MANIFEST_PUBLIC_RELEASE_v1.1.0.sha256` identify their tagged release snapshots. Narrative alignment on current `main` does not rewrite those historical identities.
 
-# Manifest strategy for repository v1.1.0
+# Manifest strategy after final-resubmission narrative alignment
 
-The original v1.0.0 root manifest was preserved before the v1.1.0 overlay was applied. A new v1.1.0 manifest was then generated for the tagged release snapshot.
+The repository now has two distinct checksum purposes.
 
-## Completed sequence
+## 1. Historical tagged-release manifests
 
-1. The historical v1.0.0 root manifest was copied to `MANIFEST_PUBLIC_RELEASE_v1.0.0.sha256`.
-2. The v1.1.0 overlay was applied.
-3. A full-repository manifest was generated for the v1.1.0 tagged release snapshot.
-4. It was saved as `MANIFEST_PUBLIC_RELEASE_v1.1.0.sha256`.
-5. At release time, the same content was also used as the convenience alias `MANIFEST_PUBLIC_RELEASE.sha256`.
+- `MANIFEST_PUBLIC_RELEASE_v1.0.0.sha256` preserves the original v1.0.0 release manifest.
+- `MANIFEST_PUBLIC_RELEASE_v1.1.0.sha256` preserves the tagged v1.1.0 release snapshot.
+- `MANIFEST_PUBLIC_RELEASE.sha256` remains the historical convenience alias for the tagged v1.1.0 manifest.
 
-## Self-reference rule
+These files are intentionally **not regenerated** after the final-resubmission narrative-alignment commit.
 
-The v1.1.0 full-repository manifest intentionally excludes:
+## 2. Current-main final-resubmission manifest
 
-- `.git/`
-- `MANIFEST_PUBLIC_RELEASE.sha256`
-- `MANIFEST_PUBLIC_RELEASE_v1.1.0.sha256`
+`MANIFEST_MAIN_FINAL_RESUBMISSION.sha256` verifies the current `main` tree after public-facing terminology and metadata were aligned to the final manuscript resubmission.
 
-It includes the preserved `MANIFEST_PUBLIC_RELEASE_v1.0.0.sha256`.
+Its coverage is the repository file set on current `main`, excluding only:
 
-## Scope after narrative alignment
+- `.git/`;
+- `MANIFEST_MAIN_FINAL_RESUBMISSION.sha256` itself;
+- `MANIFEST_PUBLIC_RELEASE.sha256`;
+- `MANIFEST_PUBLIC_RELEASE_v1.1.0.sha256`.
 
-The versioned v1.1.0 manifest remains the cryptographic identity record for the **tagged v1.1.0 release snapshot**. It is not a checksum manifest for current `main` after the final-resubmission narrative alignment.
+The two historical v1.1.0 manifest files are excluded because they intentionally describe the tagged release snapshot rather than current `main`. The preserved `MANIFEST_PUBLIC_RELEASE_v1.0.0.sha256` remains within current-main coverage.
 
-The narrative alignment changes only public-facing documentation and metadata. It does not alter:
+## Verification
+
+For current `main`:
+
+```bash
+sha256sum -c MANIFEST_MAIN_FINAL_RESUBMISSION.sha256
+python tools/verify_v1_1_repository.py --repo .
+```
+
+The verifier checks exact current-main manifest coverage, all listed file hashes, the immutable scientific archive hashes, internal addendum closure, and preservation of the historical v1.1.0 manifest alias.
+
+## Scientific immutability
+
+The final-resubmission narrative alignment does not alter:
 
 - `canonical_archive/`;
 - the original frozen `reproducibility/` layer;

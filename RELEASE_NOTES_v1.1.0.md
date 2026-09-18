@@ -47,7 +47,7 @@ Historical `new_statistical_tests: false` statements in the v1.0.0 layer apply o
 
 Neither weak-supervision source is treated as ground truth, and the results are not used to rank source correctness.
 
-The primary RQ4 association is not interpreted as a pure causal source-identity effect. Post hoc diagnostics show that weak-label class composition, target learnability, and repeated-text structure contribute to the magnitude and heterogeneity of the observed association.
+The primary RQ4 association is not interpreted as a pure causal source-identity effect. Post hoc diagnostics indicate that the magnitude and heterogeneity of the observed association are sensitive to weak-label class composition and repeated-text structure, while within-supervision performance is interpreted as a learnability diagnostic rather than evidence of source correctness.
 
 Singleton sensitivity is defined using the duplicate mapping of the **full usable-text source corpus**, not uniqueness within the RQ4 test set.
 

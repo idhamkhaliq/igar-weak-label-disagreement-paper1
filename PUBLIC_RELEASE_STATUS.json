@@ -62,5 +62,16 @@
     "existing_archived_release_doi": "10.5281/zenodo.22731209",
     "v1_1_0_version_doi": null,
     "note": "Populate a version-specific DOI only if separately verified; do not guess it."
+  },
+  "current_main_manifest": {
+    "path": "MANIFEST_MAIN_FINAL_RESUBMISSION.sha256",
+    "status": "CURRENT_MAIN_CHECKSUM_MANIFEST",
+    "scope": "Current main after final-resubmission narrative alignment.",
+    "exclusions": [
+      "MANIFEST_MAIN_FINAL_RESUBMISSION.sha256",
+      "MANIFEST_PUBLIC_RELEASE.sha256",
+      "MANIFEST_PUBLIC_RELEASE_v1.1.0.sha256"
+    ],
+    "note": "Historical v1.1.0 release manifests remain preserved separately and are not rewritten."
   }
 }
