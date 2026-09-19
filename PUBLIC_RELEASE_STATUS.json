@@ -59,9 +59,12 @@
     "license": "CC BY 4.0"
   },
   "zenodo": {
-    "existing_archived_release_doi": "10.5281/zenodo.22731209",
-    "v1_1_0_version_doi": null,
-    "note": "Populate a version-specific DOI only if separately verified; do not guess it."
+    "v1_0_0_version_doi": "10.5281/zenodo.22731209",
+    "v1_1_0_version_doi": "10.5281/zenodo.22818853",
+    "preferred_current_version_doi": "10.5281/zenodo.22818853",
+    "current_version": "1.1.0",
+    "metadata_status": "ALIGNED_TO_FINAL_RESUBMISSION",
+    "note": "The v1.1.0 version DOI is the preferred current citation for the final-resubmission reproducibility release; the v1.0.0 DOI is retained only as historical version provenance."
   },
   "current_main_manifest": {
     "path": "MANIFEST_MAIN_FINAL_RESUBMISSION.sha256",
